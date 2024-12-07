@@ -884,54 +884,72 @@ Afghanistan: https://images.pexels.com/photos/1592461/pexels-photo-1592461.jpeg?
 Bangladesh: https://images.pexels.com/photos/12251538/pexels-photo-12251538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 Pakistan: https://images.pexels.com/photos/16883433/pexels-photo-16883433/free-photo-of-lake-in-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 Syria: https://images.pexels.com/photos/6918512/pexels-photo-6918512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+Lebanon: https://images.pexels.com/photos/14506827/pexels-photo-14506827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+Turkey: https://images.pexels.com/photos/2767815/pexels-photo-2767815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+Iraq: https://images.pexels.com/photos/4092214/pexels-photo-4092214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
 
 
 
-country_image : https://flagcdn.com/sa.svg  
-country_name : Saudi Arabia  
-description: Saudi Arabia offers various visa options for tourism, education, and official purposes. Ensure all documents are in order for a smoother application process  
-
-country_image : https://flagcdn.com/ps.svg  
-country_name : Palestine  
-description: Travel to Palestine requires specific documentation, including an invitation letter for official or personal purposes  
-
-country_image : https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg  
-country_name : Afghanistan  
-description: Afghanistan welcomes travelers with the appropriate visas for business, tourism, and official engagements  
-
-country_image : https://flagcdn.com/bd.svg  
-country_name : Bangladesh  
-description: Bangladesh offers affordable visa options for tourists, students, and officials seeking entry  
-
-country_image : https://flagcdn.com/pk.svg  
-country_name : Pakistan  
-description: Pakistan requires a valid visa and ensures straightforward procedures for students, tourists, and businesses  
-
-country_image : https://flagcdn.com/sy.svg  
-country_name : Syria  
-description: Syria provides limited visa options due to ongoing conflicts. Be cautious and consult the embassy  
-
-country_image : https://flagcdn.com/lb.svg  
-country_name : Lebanon  
-description: Lebanon offers quick visa processing, suitable for tourists and students  
-
-country_image : https://flagcdn.com/tr.svg  
-country_name : Turkey  
-description: Turkey's diverse visa options cater to a wide range of visitors for tourism, education, and business  
-
-country_image : https://flagcdn.com/iq.svg  
-country_name : Iraq  
-description: Iraq has various visa options tailored for tourism and official purposes  
-
-country_image : https://flagcdn.com/ma.svg  
-country_name : Morocco  
-description: Morocco's efficient visa process is ideal for tourists and international students  
-
-country_image : https://flagcdn.com/ye.svg  
-country_name : Yemen  
-description: Yemen offers restricted visas due to ongoing conflicts. Ensure all documents are in order  
-
-country_image : https://flagcdn.com/bh.svg  
-country_name : Bahrain  
-description: Bahrain is a popular travel destination with efficient visa options for tourists and students  
+[
+  {
+    country_image: https://flagcdn.com/sa.svg,
+    country_name: Saudi Arabia,
+    description: Saudi Arabia offers diverse visa options for tourism, education, and official purposes. Ensure all required documents are complete for a smooth and hassle-free application process.
+  },
+  {
+    country_image: https://flagcdn.com/ps.svg,
+    country_name: Palestine,
+    description: Travel to Palestine requires specific documentation, including an official or personal invitation letter. Ensure compliance with all visa requirements to facilitate a seamless entry experience.
+  },
+  {
+    country_image: https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg,
+    country_name: Afghanistan,
+    description: Afghanistan offers visas for business, tourism, and official engagements. Prepare all required documents thoroughly to ensure a secure and hassle-free travel process.
+  },
+  {
+    country_image: https://flagcdn.com/bd.svg,
+    country_name: Bangladesh,
+    description: Bangladesh provides affordable visa options for tourists, students, and officials. Complete your application with the necessary documentation to ensure smooth entry to the country.
+  },
+  {
+    country_image: https://flagcdn.com/pk.svg,
+    country_name: Pakistan,
+    description: Pakistan offers straightforward visa processes for students, tourists, and businesses. Ensure all documents are in order for a smooth and efficient application experience.
+  },
+  {
+    country_image: https://flagcdn.com/sy.svg,
+    country_name: Syria,
+    description: Syria has limited visa options due to ongoing conflicts. Consult the embassy and ensure all documents are accurate before applying.
+  },
+  {
+    country_image: https://flagcdn.com/lb.svg,
+    country_name: Lebanon,
+    description: Lebanon offers quick visa processing, suitable for tourists and students. Complete your application with accuracy to ensure a smooth process.
+  },
+  {
+    country_image: https://flagcdn.com/tr.svg,
+    country_name: Turkey,
+    description: Turkey's diverse visa options cater to a wide range of visitors for tourism, education, and business. Prepare all documents for a smooth application.
+  },
+  {
+    country_image: https://flagcdn.com/iq.svg,
+    country_name: Iraq,
+    description: Iraq has various visa options tailored for tourism and official purposes. Ensure all paperwork is accurate to make the process efficient.
+  },
+  {
+    country_image: https://flagcdn.com/ma.svg,
+    country_name: Morocco,
+    description: Morocco's efficient visa process is ideal for tourists and international students. Ensure all required documents are complete for seamless travel.
+  },
+  {
+    country_image: https://flagcdn.com/ye.svg,
+    country_name: Yemen,
+    description: Yemen offers restricted visas due to ongoing conflicts. Ensure all documents are in order and consult the embassy before travel.
+  },
+  {
+    country_image: https://flagcdn.com/bh.svg,
+    country_name: Bahrain,
+    description: Bahrain is a popular travel destination with efficient visa options for tourists and students. Ensure all paperwork is accurate for smooth processing.
+  }
+]

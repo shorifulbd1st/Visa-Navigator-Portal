@@ -1,48 +1,14 @@
-import { data } from "autoprefixer";
+
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const AddVisa = () => {
-    // const [formData, setFormData] = useState({
-    //     countryImage: "",
-    //     countryName: "",
-    //     visaType: "Tourist visa",
-    //     processingTime: "",
-    //     requiredDocuments: [],
-    //     description: "",
-    //     ageRestriction: "",
-    //     fee: "",
-    //     validity: "",
-    //     applicationMethod: "",
-    // });
 
-    // const visaTypes = ["Tourist visa", "Student visa", "Official visa"];
-    // const documents = [
-    //     "Valid passport",
-    //     "Visa application form",
-    //     "Recent passport-sized photograph",
-    // ];
-
-    // const handleChange = (e) => {
-    //     const { name, value, type, checked } = e.target;
-    //     if (type === "checkbox") {
-    //         setFormData((prev) => ({
-    //             ...prev,
-    //             requiredDocuments: checked
-    //                 ? [...prev.requiredDocuments, value]
-    //                 : prev.requiredDocuments.filter((doc) => doc !== value),
-    //         }));
-    //     } else {
-    //         setFormData((prev) => ({ ...prev, [name]: value }));
-    //     }
-    // };
     const { user } = useContext(AuthContext);
-    console.log(user.email)
+    // console.log(user.email)
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log("Visa added successfully!", formData);
-        // You can send `formData` to your backend API here.
         const form = e.target;
         const countryImage = form.countryImage.value;
         const countryName = form.countryName.value;
@@ -58,11 +24,20 @@ const AddVisa = () => {
         if (validPassport) {
             requiredDocuments.push("Valid passport");
         }
+        else {
+            requiredDocuments.push("");
+        }
         if (visaApplicationForm) {
             requiredDocuments.push("Visa application form");
         }
+        else {
+            requiredDocuments.push("");
+        }
         if (photograph) {
             requiredDocuments.push("Recent passport-sized photograph");
+        }
+        else {
+            requiredDocuments.push("");
         }
 
         // console.log(requiredDocuments);
@@ -85,10 +60,12 @@ const AddVisa = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 form.reset();
             })
-            .catch(error => console.error("Error:", error));
+            .catch(error => {
+                // console.error("Error:", error)
+            });
 
     };
 

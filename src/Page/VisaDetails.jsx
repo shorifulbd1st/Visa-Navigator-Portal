@@ -6,10 +6,11 @@ const VisaDetails = () => {
 
     const visa = useLoaderData();
     const { user } = useContext(AuthContext);
-    // console.log(visa);
+
     const { _id, email, countryImage, countryName, visaType, processingTime, requiredDocuments, description, ageRestriction, fee, validity, applicationMethod } = visa;
+
+    const currentDate = new Date().toISOString().split("T")[0];
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const currentDate = new Date().toISOString().split("T")[0]; // Get current date in YYYY-MM-DD format
     const loggedInEmail = user?.email;
     const openModal = () => {
         setIsModalOpen(true);
@@ -18,17 +19,7 @@ const VisaDetails = () => {
     const closeModal = () => {
         setIsModalOpen(false);
     };
-    // const handleSubmit = e => {
-    //     e.preventDefault();
-    //     const form = e.target;
-    //     // const email = form.email.value;
-    //     const firstName = form.firstName.value;
-    //     const lastName = form.lastName.value;
-    //     // const date = form.currentDate.value;
-    //     // const fee = form.fee.value;
-    //     const data = { email, firstName, lastName, currentDate, fee };
-    //     console.log(data)
-    // }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const form = e.target;

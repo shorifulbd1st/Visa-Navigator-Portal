@@ -10,7 +10,7 @@ const MyAddedVisas = () => {
         <div className='w-11/12 mx-auto my-5'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {
-                    myAddedVisa.map(visa => <MySingleVisa key={visa._id} visa={visa}
+                    myAddedVisa.map(Visa => <MySingleVisa key={Visa._id} Visa={Visa}
                         myAddedVisa={myAddedVisa}
                         setMyAddedVisa={setMyAddedVisa}
                     ></MySingleVisa>)
