@@ -11,6 +11,8 @@ import MyAddedVisas from "../Page/MyAddedVisas";
 import AuthLayout from "../Layouts/AuthLayout";
 import Register from "../Page/Register";
 import Login from "../Page/Login";
+import PrivateRouter from "./PrivateRoute";
+import VisaDetails from "../Page/VisaDetails";
 
 
 const router = createBrowserRouter([
@@ -24,19 +26,27 @@ const router = createBrowserRouter([
             },
             {
                 path: '/all-visas',
-                element: <AllVisas></AllVisas>
+                element: <AllVisas></AllVisas>,
+                loader: () => fetch("http://localhost:5000/allVisa")
+            },
+            {
+                path: '/visa-details/:id',
+                element: <PrivateRouter><VisaDetails></VisaDetails></PrivateRouter>,
+                loader: ({ params }) => fetch(`http://localhost:5000/allVisa/${params.id}`)
             },
             {
                 path: '/add-visa',
-                element: <AddVisa></AddVisa>
+                element: <PrivateRouter><AddVisa></AddVisa></PrivateRouter>
             },
             {
-                path: '/my-added-visas',
-                element: <MyAddedVisas></MyAddedVisas>
+                path: '/my-added-visas/:email',
+                element: <PrivateRouter><MyAddedVisas></MyAddedVisas></PrivateRouter>,
+                loader: ({ params }) => fetch(`http://localhost:5000/myAddedVisa/${params.email}`)
             },
             {
-                path: '/my-visa-application',
-                element: <MyVisaApplication></MyVisaApplication>
+                path: '/my-visa-application/:email',
+                element: <PrivateRouter><MyVisaApplication></MyVisaApplication></PrivateRouter>,
+                loader: ({ params }) => fetch(`http://localhost:5000/applyVisa/${params.email}`)
             }
 
         ]

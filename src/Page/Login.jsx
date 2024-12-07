@@ -17,9 +17,6 @@ const Login = () => {
 
     const { handleGoogleLogin, user, setUser, handleLogin, notify, setNewEmail } = useContext(AuthContext);
 
-    // if (user && user?.email) {
-    //     return navigate(location?.pathname ? location.state : '/');
-    // }
 
 
     const from = location.state?.from?.pathname || '/';
@@ -86,7 +83,9 @@ const Login = () => {
                     </div>
 
                     <div className="form-control mt-3">
-                        <button className="btn bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white text-lg">Login</button>
+                        <button className="w-full px-6 py-3 text-lg font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                            Login
+                        </button>
                     </div>
 
                 </form>

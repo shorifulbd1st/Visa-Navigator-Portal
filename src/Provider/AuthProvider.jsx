@@ -40,7 +40,7 @@ const AuthProvider = ({ children }) => {
     }
 
     const handleLogout = () => {
-        // setLoading(true);
+        setLoading(true);
         signOut(auth).then(() => {
             notify('success', 'logout successfully');
         }).catch((error) => {
@@ -48,11 +48,9 @@ const AuthProvider = ({ children }) => {
     }
 
     const updateUserProfile = (updateData) => {
-
         return updateProfile(auth.currentUser, updateData);
     }
     const forgetPassword = (email) => {
-
         return sendPasswordResetEmail(auth, email);
     }
 

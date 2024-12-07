@@ -110,7 +110,10 @@ const Register = () => {
                         }
                     </div>
                     <div className="form-control mt-4">
-                        <button className="btn bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white text-lg"> Register</button>
+                        {/* <button className="btn bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white text-lg"> Register</button> */}
+                        <button className="w-full px-6 py-3 text-lg font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                            Register
+                        </button>
                     </div>
                 </form>
                 <p className='text-center font-bold'>Already Have An Account? <Link to='/auth/login' className='text-red-500'>Login</Link> </p>

@@ -6,12 +6,13 @@ import { AuthContext } from '../Provider/AuthProvider';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const { user, handleLogout } = useContext(AuthContext)
+    // console.log(user?.photoURL)
     return (
-        <div>
-            <nav className="relative bg-white shadow dark:bg-gray-800">
+        <div className='sticky top-0 z-10'>
+            <nav className="relative bg-white shadow dark:bg-gray-800 ">
                 <div className="w-11/12 py-6 mx-auto">
                     <div className="lg:flex justify-between">
-                        <div className="flex items-center justify-between border border-blue-500">
+                        <div className="flex items-center justify-between">
                             {/* <a href="#">
                                 <img
                                     className="w-auto h-6 sm:h-7"
@@ -71,7 +72,7 @@ const Navbar = () => {
                                 : 'opacity-0 -translate-x-full lg:opacity-100 lg:translate-x-0'
                                 }`}
                         >
-                            <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-2 xl:mx-4 xl:text-lg border border-red-300">
+                            <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-2 xl:mx-4 xl:text-lg">
                                 <NavLink to={'/'}
                                     className="px-2 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                                 >
@@ -87,12 +88,12 @@ const Navbar = () => {
                                 >
                                     Add Visa
                                 </NavLink>
-                                <NavLink to={'/my-added-visas'}
+                                <NavLink to={`/my-added-visas/${user?.email}`}
                                     className="px-2 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                                 >
                                     My added visas
                                 </NavLink>
-                                <NavLink to={'/my-visa-application'}
+                                <NavLink to={`/my-visa-application/${user?.email}`}
                                     className="px-2 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                                 >
                                     My Visa applications
@@ -129,21 +130,22 @@ const Navbar = () => {
                                                 <div className="w-10 h-10 overflow-hidden border-2 border-gray-400 rounded-full">
                                                     <img
                                                         // src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-                                                        src={user.photoURL}
+                                                        src={user?.photoURL}
+
                                                         className="object-cover w-full h-full"
                                                         alt="avatar"
                                                     />
                                                 </div>
                                             </a>
                                             <Tooltip anchorSelect="#not-clickable">
-                                                <button>{user.displayName}</button>
+                                                <button>{user?.displayName}</button>
                                             </Tooltip>
                                         </button>
                                         {/* <img title={user.displayName} className='w-12 h-12 rounded-full' src={user.photoURL} alt="" /> */}
-                                        <button onClick={handleLogout} className='btn bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white text-lg'>Logout</button>
-                                    </div> : <div className='flex'>
-                                        <Link to={'/auth/register'} className='btn bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white text-lg'>Register</Link>
-                                        <Link to={'/auth/login'} className='btn bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white text-lg'>Login</Link>
+                                        <button onClick={handleLogout} className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">Logout</button>
+                                    </div> : <div className='flex gap-2'>
+                                        <Link to={'/auth/register'} className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">Register</Link>
+                                        <Link to={'/auth/login'} className=" px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">Login</Link>
                                     </div>
                                 }
                                 {/* <Link to={'/auth/login'} className='btn bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white text-lg'>Login</Link> */}

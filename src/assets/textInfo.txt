@@ -1,0 +1,937 @@
+countries name
+Saudi Arabia
+Palestine
+Afghanistan
+Bangladesh
+Pakistan
+Syria
+Lebanon
+Turkey
+Iraq
+Morocco
+Yemen
+Bahrain
+
+countries flag
+https://flagcdn.com/sa.svg
+https://flagcdn.com/ps.svg
+https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg
+https://flagcdn.com/bd.svg
+https://flagcdn.com/pk.svg
+https://flagcdn.com/sy.svg
+https://flagcdn.com/lb.svg
+https://flagcdn.com/tr.svg
+https://flagcdn.com/iq.svg
+https://flagcdn.com/ma.svg
+https://flagcdn.com/ye.svg
+https://flagcdn.com/bh.svg
+
+
+
+You said:
+Country image. (you can upload the country image to imgbb and provide the image link here.)
+Country name.
+Visa_type. (dropdown.Options can be “Tourist visa”, “Student visa”, “Official visa” etc. You must choose at least 3 visa types.
+Processing_time.
+Required_documents.(Multiple options can be selected through checkboxes.Options can be  “Valid passport", "Visa application form", "Recent passport-sized photograph" etc.You must add at least 3 checkboxes here.)
+Description.
+Age_restriction. (number field)
+Fee. (number field)
+Validity.
+Application_method.
+create json data below this country above this information
+Saudi Arabia 
+Palestine
+Afghanistan
+Bangladesh
+Pakistan
+Syria
+Lebanon
+Turkey
+Iraq
+Morocco
+Yemen
+Bahrain
+ChatGPT said:
+ChatGPT
+Here is the JSON data structure based on your requirements:
+
+json
+Copy code
+[
+  {
+    "country_name": "Saudi Arabia",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "15-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Saudi Arabia offers various visa options for tourism, education, and official purposes. Ensure all documents are in order for a smoother application process.",
+    "age_restriction": 18,
+    "fee": 100,
+    "validity": "90 days",
+    "application_method": "Online"
+  },
+  {
+    "country_name": "Palestine",
+    "visa_type": ["Tourist visa", "Official visa"],
+    "processing_time": "20-30 days",
+    "required_documents": ["Valid passport", "Invitation letter", "Travel insurance"],
+    "description": "Travel to Palestine requires specific documentation, including an invitation letter for official or personal purposes.",
+    "age_restriction": 21,
+    "fee": 50,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Afghanistan",
+    "visa_type": ["Tourist visa", "Business visa", "Official visa"],
+    "processing_time": "10-15 days",
+    "required_documents": ["Valid passport", "Visa application form", "Proof of accommodation"],
+    "description": "Afghanistan welcomes travelers with the appropriate visas for business, tourism, and official engagements.",
+    "age_restriction": 18,
+    "fee": 80,
+    "validity": "60 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Bangladesh",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "7-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Bangladesh offers affordable visa options for tourists, students, and officials seeking entry.",
+    "age_restriction": 16,
+    "fee": 50,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Pakistan",
+    "visa_type": ["Tourist visa", "Business visa", "Student visa"],
+    "processing_time": "10-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Bank statement"],
+    "description": "Pakistan requires a valid visa and ensures straightforward procedures for students, tourists, and businesses.",
+    "age_restriction": 18,
+    "fee": 70,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Syria",
+    "visa_type": ["Tourist visa", "Official visa", "Transit visa"],
+    "processing_time": "15-25 days",
+    "required_documents": ["Valid passport", "Travel itinerary", "Visa application form"],
+    "description": "Syria provides limited visa options due to ongoing conflicts. Be cautious and consult the embassy.",
+    "age_restriction": 21,
+    "fee": 100,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Lebanon",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "5-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Proof of accommodation"],
+    "description": "Lebanon offers quick visa processing, suitable for tourists and students.",
+    "age_restriction": 18,
+    "fee": 40,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Turkey",
+    "visa_type": ["Tourist visa", "Student visa", "Business visa"],
+    "processing_time": "10-15 days",
+    "required_documents": ["Valid passport", "Visa application form", "Travel insurance"],
+    "description": "Turkey's diverse visa options cater to a wide range of visitors for tourism, education, and business.",
+    "age_restriction": 18,
+    "fee": 60,
+    "validity": "180 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Iraq",
+    "visa_type": ["Tourist visa", "Official visa", "Business visa"],
+    "processing_time": "15-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Invitation letter"],
+    "description": "Iraq has various visa options tailored for tourism and official purposes.",
+    "age_restriction": 18,
+    "fee": 90,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Morocco",
+    "visa_type": ["Tourist visa", "Student visa", "Business visa"],
+    "processing_time": "5-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Morocco's efficient visa process is ideal for tourists and international students.",
+    "age_restriction": 16,
+    "fee": 60,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Yemen",
+    "visa_type": ["Tourist visa", "Business visa", "Official visa"],
+    "processing_time": "20-30 days",
+    "required_documents": ["Valid passport", "Visa application form", "Travel itinerary"],
+    "description": "Yemen offers restricted visas due to ongoing conflicts. Ensure all documents are in order.",
+    "age_restriction": 21,
+    "fee": 100,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Bahrain",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "3-7 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Bahrain is a popular travel destination with efficient visa options for tourists and students.",
+    "age_restriction": 18,
+    "fee": 45,
+    "validity": "30 days",
+    "application_method": "Online or Embassy visit"
+  }
+]
+
+
+
+
+
+You said:
+ফি টা দেশের মুদ্রা অনুযায়ী দাও ফি যেন ২০০ থেকে ৫০০ মধ্যে হয়
+ChatGPT said:
+ChatGPT
+আপনার চাহিদা অনুযায়ী প্রতিটি দেশের ফি সংশ্লিষ্ট দেশের মুদ্রায় ২০০ থেকে ৫০০ এর মধ্যে নির্ধারণ করেছি। আপডেট করা JSON ডেটা নিচে দেওয়া হলো:
+
+json
+Copy code
+[
+  {
+    "country_name": "Saudi Arabia",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "15-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Saudi Arabia offers various visa options for tourism, education, and official purposes. Ensure all documents are in order for a smoother application process.",
+    "age_restriction": 18,
+    "fee": 300, 
+    "currency": "SAR",
+    "validity": "90 days",
+    "application_method": "Online"
+  },
+  {
+    "country_name": "Palestine",
+    "visa_type": ["Tourist visa", "Official visa"],
+    "processing_time": "20-30 days",
+    "required_documents": ["Valid passport", "Invitation letter", "Travel insurance"],
+    "description": "Travel to Palestine requires specific documentation, including an invitation letter for official or personal purposes.",
+    "age_restriction": 21,
+    "fee": 250,
+    "currency": "ILS",
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Afghanistan",
+    "visa_type": ["Tourist visa", "Business visa", "Official visa"],
+    "processing_time": "10-15 days",
+    "required_documents": ["Valid passport", "Visa application form", "Proof of accommodation"],
+    "description": "Afghanistan welcomes travelers with the appropriate visas for business, tourism, and official engagements.",
+    "age_restriction": 18,
+    "fee": 400,
+    "currency": "AFN",
+    "validity": "60 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Bangladesh",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "7-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Bangladesh offers affordable visa options for tourists, students, and officials seeking entry.",
+    "age_restriction": 16,
+    "fee": 350,
+    "currency": "BDT",
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Pakistan",
+    "visa_type": ["Tourist visa", "Business visa", "Student visa"],
+    "processing_time": "10-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Bank statement"],
+    "description": "Pakistan requires a valid visa and ensures straightforward procedures for students, tourists, and businesses.",
+    "age_restriction": 18,
+    "fee": 450,
+    "currency": "PKR",
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Syria",
+    "visa_type": ["Tourist visa", "Official visa", "Transit visa"],
+    "processing_time": "15-25 days",
+    "required_documents": ["Valid passport", "Travel itinerary", "Visa application form"],
+    "description": "Syria provides limited visa options due to ongoing conflicts. Be cautious and consult the embassy.",
+    "age_restriction": 21,
+    "fee": 200,
+    "currency": "SYP",
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Lebanon",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "5-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Proof of accommodation"],
+    "description": "Lebanon offers quick visa processing, suitable for tourists and students.",
+    "age_restriction": 18,
+    "fee": 300,
+    "currency": "LBP",
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Turkey",
+    "visa_type": ["Tourist visa", "Student visa", "Business visa"],
+    "processing_time": "10-15 days",
+    "required_documents": ["Valid passport", "Visa application form", "Travel insurance"],
+    "description": "Turkey's diverse visa options cater to a wide range of visitors for tourism, education, and business.",
+    "age_restriction": 18,
+    "fee": 400,
+    "currency": "TRY",
+    "validity": "180 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Iraq",
+    "visa_type": ["Tourist visa", "Official visa", "Business visa"],
+    "processing_time": "15-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Invitation letter"],
+    "description": "Iraq has various visa options tailored for tourism and official purposes.",
+    "age_restriction": 18,
+    "fee": 350,
+    "currency": "IQD",
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Morocco",
+    "visa_type": ["Tourist visa", "Student visa", "Business visa"],
+    "processing_time": "5-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Morocco's efficient visa process is ideal for tourists and international students.",
+    "age_restriction": 16,
+    "fee": 200,
+    "currency": "MAD",
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Yemen",
+    "visa_type": ["Tourist visa", "Business visa", "Official visa"],
+    "processing_time": "20-30 days",
+    "required_documents": ["Valid passport", "Visa application form", "Travel itinerary"],
+    "description": "Yemen offers restricted visas due to ongoing conflicts. Ensure all documents are in order.",
+    "age_restriction": 21,
+    "fee": 500,
+    "currency": "YER",
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Bahrain",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "3-7 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Bahrain is a popular travel destination with efficient visa options for tourists and students.",
+    "age_restriction": 18,
+    "fee": 250,
+    "currency": "BHD",
+    "validity": "30 days",
+    "application_method": "Online or Embassy visit"
+  }
+]
+
+
+
+
+
+You said:
+remove currency
+ChatGPT said:
+ChatGPT
+Here is the updated JSON without the currency field:
+
+json
+Copy code
+[
+  {
+    "country_name": "Saudi Arabia",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "15-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Saudi Arabia offers various visa options for tourism, education, and official purposes. Ensure all documents are in order for a smoother application process.",
+    "age_restriction": 18,
+    "fee": 300,
+    "validity": "90 days",
+    "application_method": "Online"
+  },
+  {
+    "country_name": "Palestine",
+    "visa_type": ["Tourist visa", "Official visa"],
+    "processing_time": "20-30 days",
+    "required_documents": ["Valid passport", "Invitation letter", "Travel insurance"],
+    "description": "Travel to Palestine requires specific documentation, including an invitation letter for official or personal purposes.",
+    "age_restriction": 21,
+    "fee": 250,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Afghanistan",
+    "visa_type": ["Tourist visa", "Business visa", "Official visa"],
+    "processing_time": "10-15 days",
+    "required_documents": ["Valid passport", "Visa application form", "Proof of accommodation"],
+    "description": "Afghanistan welcomes travelers with the appropriate visas for business, tourism, and official engagements.",
+    "age_restriction": 18,
+    "fee": 400,
+    "validity": "60 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Bangladesh",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "7-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Bangladesh offers affordable visa options for tourists, students, and officials seeking entry.",
+    "age_restriction": 16,
+    "fee": 350,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Pakistan",
+    "visa_type": ["Tourist visa", "Business visa", "Student visa"],
+    "processing_time": "10-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Bank statement"],
+    "description": "Pakistan requires a valid visa and ensures straightforward procedures for students, tourists, and businesses.",
+    "age_restriction": 18,
+    "fee": 450,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Syria",
+    "visa_type": ["Tourist visa", "Official visa", "Transit visa"],
+    "processing_time": "15-25 days",
+    "required_documents": ["Valid passport", "Travel itinerary", "Visa application form"],
+    "description": "Syria provides limited visa options due to ongoing conflicts. Be cautious and consult the embassy.",
+    "age_restriction": 21,
+    "fee": 200,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Lebanon",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "5-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Proof of accommodation"],
+    "description": "Lebanon offers quick visa processing, suitable for tourists and students.",
+    "age_restriction": 18,
+    "fee": 300,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Turkey",
+    "visa_type": ["Tourist visa", "Student visa", "Business visa"],
+    "processing_time": "10-15 days",
+    "required_documents": ["Valid passport", "Visa application form", "Travel insurance"],
+    "description": "Turkey's diverse visa options cater to a wide range of visitors for tourism, education, and business.",
+    "age_restriction": 18,
+    "fee": 400,
+    "validity": "180 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_name": "Iraq",
+    "visa_type": ["Tourist visa", "Official visa", "Business visa"],
+    "processing_time": "15-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Invitation letter"],
+    "description": "Iraq has various visa options tailored for tourism and official purposes.",
+    "age_restriction": 18,
+    "fee": 350,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_name": "Morocco",
+    "visa_type": ["Tourist visa", "Student visa", "Business visa"],
+    "processing_time": "5-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description":
+
+
+
+
+
+You said:
+Country image. (you can upload the country image to imgbb and provide the image link here.)
+Country name.
+Visa_type. (dropdown.Options can be “Tourist visa”, “Student visa”, “Official visa” etc. You must choose at least 3 visa types.
+Processing_time.
+Required_documents.(Multiple options can be selected through checkboxes.Options can be  “Valid passport", "Visa application form", "Recent passport-sized photograph" etc.You must add at least 3 checkboxes here.)
+Description.
+Age_restriction. (number field)
+Fee. (number field)
+Validity.
+Application_method.
+provide in this property
+ChatGPT said:
+ChatGPT
+Here’s the JSON structure with the mentioned properties, including placeholders for the country image (which you can replace with actual image links from Imgbb):
+
+json
+Copy code
+[
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Saudi Arabia",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "15-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Saudi Arabia offers various visa options for tourism, education, and official purposes. Ensure all documents are in order for a smoother application process.",
+    "age_restriction": 18,
+    "fee": 300,
+    "validity": "90 days",
+    "application_method": "Online"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Palestine",
+    "visa_type": ["Tourist visa", "Official visa"],
+    "processing_time": "20-30 days",
+    "required_documents": ["Valid passport", "Invitation letter", "Travel insurance"],
+    "description": "Travel to Palestine requires specific documentation, including an invitation letter for official or personal purposes.",
+    "age_restriction": 21,
+    "fee": 250,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Afghanistan",
+    "visa_type": ["Tourist visa", "Business visa", "Official visa"],
+    "processing_time": "10-15 days",
+    "required_documents": ["Valid passport", "Visa application form", "Proof of accommodation"],
+    "description": "Afghanistan welcomes travelers with the appropriate visas for business, tourism, and official engagements.",
+    "age_restriction": 18,
+    "fee": 400,
+    "validity": "60 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Bangladesh",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "7-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Bangladesh offers affordable visa options for tourists, students, and officials seeking entry.",
+    "age_restriction": 16,
+    "fee": 350,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Pakistan",
+    "visa_type": ["Tourist visa", "Business visa", "Student visa"],
+    "processing_time": "10-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Bank statement"],
+    "description": "Pakistan requires a valid visa and ensures straightforward procedures for students, tourists, and businesses.",
+    "age_restriction": 18,
+    "fee": 450,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Syria",
+    "visa_type": ["Tourist visa", "Official visa", "Transit visa"],
+    "processing_time": "15-25 days",
+    "required_documents": ["Valid passport", "Travel itinerary", "Visa application form"],
+    "description": "Syria provides limited visa options due to ongoing conflicts. Be cautious and consult the embassy.",
+    "age_restriction": 21,
+    "fee": 200,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Lebanon",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "5-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Proof of accommodation"],
+    "description": "Lebanon offers quick visa processing, suitable for tourists and students.",
+    "age_restriction": 18,
+    "fee": 300,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Turkey",
+    "visa_type": ["Tourist visa", "Student visa", "Business visa"],
+    "processing_time": "10-15 days",
+    "required_documents": ["Valid passport", "Visa application form", "Travel insurance"],
+    "description": "Turkey's diverse visa options cater to a wide range of visitors for tourism, education, and business.",
+    "age_restriction": 18,
+    "fee": 400,
+    "validity": "180 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Iraq",
+    "visa_type": ["Tourist visa", "Official visa", "Business visa"],
+    "processing_time": "15-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Invitation letter"],
+    "description": "Iraq has various visa options tailored for tourism and official purposes.",
+    "age_restriction": 18,
+    "fee": 350,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Morocco",
+    "visa_type": ["Tourist visa", "Student visa", "Business visa"],
+    "processing_time": "5-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Morocco's efficient visa process is ideal for tourists and international students.",
+    "age_restriction": 16,
+    "fee": 200,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Yemen",
+    "visa_type": ["Tourist visa", "Business visa", "Official visa"],
+    "processing_time": "20-30 days",
+    "required_documents": ["Valid passport", "Visa application form", "Travel itinerary"],
+    "description": "Yemen offers restricted visas due to ongoing conflicts. Ensure all documents are in order.",
+    "age_restriction": 21,
+    "fee": 500,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_image": "https://via.placeholder.com/150", 
+    "country_name": "Bahrain",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "3-7 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Bahrain is a popular travel destination with efficient visa options for tourists and students.",
+    "age_restriction": 18,
+    "fee": 250,
+    "validity": "30 days",
+    "application_method": "Online or Embassy visit"
+  }
+]
+You can replace the https://via.placeholder.com/150 links with actual image URLs from Imgbb or other sources.
+
+
+
+
+
+
+You said:
+https://flagcdn.com/sa.svg
+https://flagcdn.com/ps.svg
+https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg
+https://flagcdn.com/bd.svg
+https://flagcdn.com/pk.svg
+https://flagcdn.com/sy.svg
+
+https://flagcdn.com/lb.svg
+https://flagcdn.com/tr.svg
+https://flagcdn.com/iq.svg
+https://flagcdn.com/ma.svg
+https://flagcdn.com/ye.svg
+https://flagcdn.com/bh.svg
+change all country image this links
+ChatGPT said:
+ChatGPT
+Here is the updated JSON with the country images replaced with the provided links:
+
+json
+Copy code
+[
+  {
+    "country_image": "https://flagcdn.com/sa.svg",
+    "country_name": "Saudi Arabia",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "15-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Saudi Arabia offers various visa options for tourism, education, and official purposes. Ensure all documents are in order for a smoother application process.",
+    "age_restriction": 18,
+    "fee": 300,
+    "validity": "90 days",
+    "application_method": "Online"
+  },
+  {
+    "country_image": "https://flagcdn.com/ps.svg",
+    "country_name": "Palestine",
+    "visa_type": ["Tourist visa", "Official visa"],
+    "processing_time": "20-30 days",
+    "required_documents": ["Valid passport", "Invitation letter", "Travel insurance"],
+    "description": "Travel to Palestine requires specific documentation, including an invitation letter for official or personal purposes.",
+    "age_restriction": 21,
+    "fee": 250,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+    "country_name": "Afghanistan",
+    "visa_type": ["Tourist visa", "Business visa", "Official visa"],
+    "processing_time": "10-15 days",
+    "required_documents": ["Valid passport", "Visa application form", "Proof of accommodation"],
+    "description": "Afghanistan welcomes travelers with the appropriate visas for business, tourism, and official engagements.",
+    "age_restriction": 18,
+    "fee": 400,
+    "validity": "60 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_image": "https://flagcdn.com/bd.svg",
+    "country_name": "Bangladesh",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "7-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Bangladesh offers affordable visa options for tourists, students, and officials seeking entry.",
+    "age_restriction": 16,
+    "fee": 350,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_image": "https://flagcdn.com/pk.svg",
+    "country_name": "Pakistan",
+    "visa_type": ["Tourist visa", "Business visa", "Student visa"],
+    "processing_time": "10-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Bank statement"],
+    "description": "Pakistan requires a valid visa and ensures straightforward procedures for students, tourists, and businesses.",
+    "age_restriction": 18,
+    "fee": 450,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_image": "https://flagcdn.com/sy.svg",
+    "country_name": "Syria",
+    "visa_type": ["Tourist visa", "Official visa", "Transit visa"],
+    "processing_time": "15-25 days",
+    "required_documents": ["Valid passport", "Travel itinerary", "Visa application form"],
+    "description": "Syria provides limited visa options due to ongoing conflicts. Be cautious and consult the embassy.",
+    "age_restriction": 21,
+    "fee": 200,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_image": "https://flagcdn.com/lb.svg",
+    "country_name": "Lebanon",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "5-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Proof of accommodation"],
+    "description": "Lebanon offers quick visa processing, suitable for tourists and students.",
+    "age_restriction": 18,
+    "fee": 300,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_image": "https://flagcdn.com/tr.svg",
+    "country_name": "Turkey",
+    "visa_type": ["Tourist visa", "Student visa", "Business visa"],
+    "processing_time": "10-15 days",
+    "required_documents": ["Valid passport", "Visa application form", "Travel insurance"],
+    "description": "Turkey's diverse visa options cater to a wide range of visitors for tourism, education, and business.",
+    "age_restriction": 18,
+    "fee": 400,
+    "validity": "180 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_image": "https://flagcdn.com/iq.svg",
+    "country_name": "Iraq",
+    "visa_type": ["Tourist visa", "Official visa", "Business visa"],
+    "processing_time": "15-20 days",
+    "required_documents": ["Valid passport", "Visa application form", "Invitation letter"],
+    "description": "Iraq has various visa options tailored for tourism and official purposes.",
+    "age_restriction": 18,
+    "fee": 350,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_image": "https://flagcdn.com/ma.svg",
+    "country_name": "Morocco",
+    "visa_type": ["Tourist visa", "Student visa", "Business visa"],
+    "processing_time": "5-10 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Morocco's efficient visa process is ideal for tourists and international students.",
+    "age_restriction": 16,
+    "fee": 200,
+    "validity": "90 days",
+    "application_method": "Online or Embassy visit"
+  },
+  {
+    "country_image": "https://flagcdn.com/ye.svg",
+    "country_name": "Yemen",
+    "visa_type": ["Tourist visa", "Business visa", "Official visa"],
+    "processing_time": "20-30 days",
+    "required_documents": ["Valid passport", "Visa application form", "Travel itinerary"],
+    "description": "Yemen offers restricted visas due to ongoing conflicts. Ensure all documents are in order.",
+    "age_restriction": 21,
+    "fee": 500,
+    "validity": "30 days",
+    "application_method": "Embassy visit"
+  },
+  {
+    "country_image": "https://flagcdn.com/bh.svg",
+    "country_name": "Bahrain",
+    "visa_type": ["Tourist visa", "Student visa", "Official visa"],
+    "processing_time": "3-7 days",
+    "required_documents": ["Valid passport", "Visa application form", "Recent passport-sized photograph"],
+    "description": "Bahrain is a popular travel destination with efficient visa options for tourists and students.",
+    "age_restriction": 18,
+    "fee": 250,
+    "validity": "30 days",
+    "application_method": "Online or Embassy visit"
+  }
+]
+
+
+
+
+
+You said:
+Name the most beautiful tourist attractions in these countries.
+Saudi Arabia
+Palestine
+Afghanistan
+Bangladesh
+Pakistan
+Syria
+Lebanon
+Turkey
+Iraq
+Morocco
+Yemen
+Bahrain
+ChatGPT said:
+ChatGPT
+Here’s a list of some of the most beautiful tourist attractions in the mentioned countries:
+
+Saudi Arabia
+Al-Ula: Ancient desert landscapes with rock formations and historical sites like Madain Saleh.
+Mecca and Medina: Religious pilgrimage destinations with stunning Islamic architecture.
+Edge of the World: A dramatic cliff with panoramic views of the desert.
+Red Sea Coast: Pristine beaches and coral reefs for snorkeling and diving.
+Palestine
+Dome of the Rock: Iconic golden mosque in Jerusalem's Old City.
+Church of the Nativity: Birthplace of Jesus in Bethlehem.
+Dead Sea: Unique saltwater lake ideal for relaxation and natural beauty.
+Jericho: One of the oldest cities in the world, surrounded by ancient ruins.
+Afghanistan
+Band-e-Amir National Park: Series of blue lakes surrounded by rugged cliffs.
+Bamiyan Valley: Home to the ruins of ancient Buddha statues and stunning landscapes.
+Kabul’s Gardens of Babur: Historic Persian-style garden.
+Panjshir Valley: Scenic valley with snow-capped mountains.
+
+
+
+
+
+You said:
+only one place
+ChatGPT said:
+ChatGPT
+Here’s one standout tourist attraction for each country:
+
+Saudi Arabia: Al-Ula (Madain Saleh)
+Palestine: Dome of the Rock
+Afghanistan: Band-e-Amir National Park
+Bangladesh: Sundarbans Mangrove Forest
+Pakistan: Hunza Valley
+Syria: Krak des Chevaliers (Crusader Castle)
+Lebanon: Jeita Grotto
+Turkey: Cappadocia
+Iraq: Ziggurat of Ur
+Morocco: Chefchaouen (The Blue City)
+Yemen: Socotra Island
+Bahrain: Bahrain Fort (Qal'at al-Bahrain)
+
+
+
+Name the most beautiful tourist attractions in these countries.
+Saudi Arabia: https://images.pexels.com/photos/4346403/pexels-photo-4346403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+Palestine: https://images.pexels.com/photos/17690078/pexels-photo-17690078/free-photo-of-view-of-the-dome-of-the-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+Afghanistan: https://images.pexels.com/photos/1592461/pexels-photo-1592461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+Bangladesh: https://images.pexels.com/photos/12251538/pexels-photo-12251538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+Pakistan: https://images.pexels.com/photos/16883433/pexels-photo-16883433/free-photo-of-lake-in-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+Syria: https://images.pexels.com/photos/6918512/pexels-photo-6918512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
+
+
+
+country_image : https://flagcdn.com/sa.svg  
+country_name : Saudi Arabia  
+description: Saudi Arabia offers various visa options for tourism, education, and official purposes. Ensure all documents are in order for a smoother application process  
+
+country_image : https://flagcdn.com/ps.svg  
+country_name : Palestine  
+description: Travel to Palestine requires specific documentation, including an invitation letter for official or personal purposes  
+
+country_image : https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg  
+country_name : Afghanistan  
+description: Afghanistan welcomes travelers with the appropriate visas for business, tourism, and official engagements  
+
+country_image : https://flagcdn.com/bd.svg  
+country_name : Bangladesh  
+description: Bangladesh offers affordable visa options for tourists, students, and officials seeking entry  
+
+country_image : https://flagcdn.com/pk.svg  
+country_name : Pakistan  
+description: Pakistan requires a valid visa and ensures straightforward procedures for students, tourists, and businesses  
+
+country_image : https://flagcdn.com/sy.svg  
+country_name : Syria  
+description: Syria provides limited visa options due to ongoing conflicts. Be cautious and consult the embassy  
+
+country_image : https://flagcdn.com/lb.svg  
+country_name : Lebanon  
+description: Lebanon offers quick visa processing, suitable for tourists and students  
+
+country_image : https://flagcdn.com/tr.svg  
+country_name : Turkey  
+description: Turkey's diverse visa options cater to a wide range of visitors for tourism, education, and business  
+
+country_image : https://flagcdn.com/iq.svg  
+country_name : Iraq  
+description: Iraq has various visa options tailored for tourism and official purposes  
+
+country_image : https://flagcdn.com/ma.svg  
+country_name : Morocco  
+description: Morocco's efficient visa process is ideal for tourists and international students  
+
+country_image : https://flagcdn.com/ye.svg  
+country_name : Yemen  
+description: Yemen offers restricted visas due to ongoing conflicts. Ensure all documents are in order  
+
+country_image : https://flagcdn.com/bh.svg  
+country_name : Bahrain  
+description: Bahrain is a popular travel destination with efficient visa options for tourists and students  
