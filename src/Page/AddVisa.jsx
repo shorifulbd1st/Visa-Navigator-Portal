@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const AddVisa = () => {
 
-    const { user } = useContext(AuthContext);
+    const { user, notify } = useContext(AuthContext);
     // console.log(user.email)
 
     const handleSubmit = (e) => {
@@ -63,18 +63,13 @@ const AddVisa = () => {
             .then(data => {
                 // console.log(data);
                 if (data.insertedId) {
-                    Swal.fire({
-                        position: "top-end",
-                        icon: "success",
-                        title: "Visa added successfully!",
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
+                    notify('success', 'Visa added successfully!')
                 }
                 form.reset();
             })
             .catch(error => {
                 // console.error("Error:", error)
+                notify('error', 'Visa added fail!')
             });
 
     };

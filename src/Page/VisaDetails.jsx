@@ -5,7 +5,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 const VisaDetails = () => {
 
     const visa = useLoaderData();
-    const { user } = useContext(AuthContext);
+    const { user, notify } = useContext(AuthContext);
 
     const { _id, email, countryImage, countryName, visaType, processingTime, requiredDocuments, description, ageRestriction, fee, validity, applicationMethod } = visa;
 
@@ -46,7 +46,7 @@ const VisaDetails = () => {
             currentDate,
             visa
         };
-        console.log(data);
+        // console.log(data);
         fetch('http://localhost:5000/applyVisa', {
             method: "POST",
             headers: {
@@ -56,7 +56,10 @@ const VisaDetails = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
+                if (data.insertedId) {
+                    notify('success', 'Your visa application has been successful.!')
+                }
             })
 
         // Proceed with the form submission or API call

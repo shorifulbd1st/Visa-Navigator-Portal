@@ -7,14 +7,14 @@ const SingleVisa = ({ visa }) => {
 
     return (
         <div>
-            <div className="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            {/* <div className="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
                 <img
                     className="object-cover object-center w-full h-56"
                     src={countryImage}
                     alt="avatar"
                 />
 
-                {/* <div className="flex items-center px-6 py-3 bg-gray-900">
+                <div className="flex items-center px-6 py-3 bg-gray-900">
                     <svg
                         aria-label="headphones icon"
                         className="w-6 h-6 text-white fill-current"
@@ -29,7 +29,7 @@ const SingleVisa = ({ visa }) => {
                         />
                     </svg>
                     <h1 className="mx-3 text-lg font-semibold text-white">Focusing</h1>
-                </div> */}
+                </div>
 
                 <div className="px-6 py-4">
                     <h1 className="text-xl font-semibold text-gray-800 dark:text-white">
@@ -39,7 +39,7 @@ const SingleVisa = ({ visa }) => {
                         {description}
                     </p>
 
-                    {/* <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
+                    <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
                         <svg
                             aria-label="suitcase icon"
                             className="w-6 h-6 fill-current"
@@ -94,13 +94,51 @@ const SingleVisa = ({ visa }) => {
                             />
                         </svg>
                         <h1 className="px-2 text-sm">patterson@example.com</h1>
-                    </div> */}
+                    </div>
                     <Link to={`/visa-details/${_id}`} className="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
                         Visa Details
                     </Link>
 
                 </div>
+            </div> */}
+
+            <div className="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                {/* Country Image */}
+                <img
+                    className="object-cover object-center w-full h-56"
+                    src={countryImage}
+                    alt={`${countryName} Visa`}
+                />
+
+                {/* Card Content */}
+                <div className="px-6 py-4">
+                    {/* Country Name */}
+                    <h1 className="text-2xl font-semibold text-gray-800 dark:text-white">
+                        {countryName}
+                    </h1>
+
+                    {/* Visa Details */}
+                    <div className="mt-4 text-gray-700 dark:text-gray-400">
+                        <p><span className="font-medium">Visa Type:</span> {visaType}</p>
+                        <p><span className="font-medium">Processing Time:</span> {processingTime} days</p>
+                        <p><span className="font-medium">Fee:</span> ${fee}</p>
+                        <p><span className="font-medium">Validity:</span> {validity} days</p>
+                        <p><span className="font-medium">Application Method:</span> {applicationMethod}</p>
+                    </div>
+                </div>
+
+                {/* Button Section */}
+                <div className="px-6 py-4">
+                    <Link
+                        to={`/visa-details/${_id}`}
+                        className="w-full block px-6 py-2 text-center font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+                    >
+                        Visa Details
+                    </Link>
+                </div>
             </div>
+
+
 
         </div>
     )
