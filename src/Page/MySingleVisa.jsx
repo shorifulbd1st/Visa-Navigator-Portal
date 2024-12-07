@@ -261,7 +261,7 @@ const MySingleVisa = ({ Visa, myAddedVisa, setMyAddedVisa }) => {
                                                 name="visaType"
                                                 className="select select-bordered select-error w-full max-w-full sm:max-w-md"
                                             >
-                                                <option disabled selected>Visa Type</option>
+                                                <option disabled >Visa Type</option>
                                                 <option value="Tourist visa">Tourist visa</option>
                                                 <option value="Student visa">Student visa</option>
                                                 <option value="Official visa">Official visa</option>
@@ -355,7 +355,7 @@ const MySingleVisa = ({ Visa, myAddedVisa, setMyAddedVisa }) => {
                                                 defaultValue={applicationMethod}
 
                                             >
-                                                <option disabled selected>Application Method</option>
+                                                <option disabled >Application Method</option>
                                                 <option value="online">Online</option>
                                                 <option value="in-person">In-person</option>
                                             </select>

@@ -23,7 +23,8 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: () => fetch("http://localhost:5000/LatestVisas")
             },
             {
                 path: '/all-visas',
@@ -49,11 +50,11 @@ const router = createBrowserRouter([
                 element: <PrivateRouter><MyVisaApplication></MyVisaApplication></PrivateRouter>,
                 loader: ({ params }) => fetch(`http://localhost:5000/applyVisa/${params.email}`)
             },
-            {
-                path: '/update/:id',
-                element: <UpdateVisa></UpdateVisa>,
-                loader: ({ params }) => fetch(`http://localhost:5000/allVisa/${params.id}`)
-            }
+            // {
+            //     path: '/update/:id',
+            //     element: <UpdateVisa></UpdateVisa>,
+            //     loader: ({ params }) => fetch(`http://localhost:5000/allVisa/${params.id}`)
+            // }
 
         ]
     },

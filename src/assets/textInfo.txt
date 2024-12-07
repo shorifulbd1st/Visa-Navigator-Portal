@@ -887,9 +887,9 @@ Syria: https://images.pexels.com/photos/6918512/pexels-photo-6918512.jpeg?auto=c
 Lebanon: https://images.pexels.com/photos/14506827/pexels-photo-14506827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 Turkey: https://images.pexels.com/photos/2767815/pexels-photo-2767815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 Iraq: https://images.pexels.com/photos/4092214/pexels-photo-4092214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-
-
-
+Morocco: https://images.pexels.com/photos/29638614/pexels-photo-29638614/free-photo-of-scenic-view-of-draa-valley-in-morocco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+Yemen: https://images.pexels.com/photos/11201285/pexels-photo-11201285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+Bahrain: https://images.pexels.com/photos/8191358/pexels-photo-8191358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
 [
   {

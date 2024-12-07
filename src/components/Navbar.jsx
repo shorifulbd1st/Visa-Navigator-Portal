@@ -117,30 +117,32 @@ const Navbar = () => {
                                             className="flex items-center focus:outline-none"
                                             aria-label="toggle profile dropdown"
                                         >
-                                            {/* <div className="w-8 h-8 overflow-hidden border-2 border-gray-400 rounded-full">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-                                            className="object-cover w-full h-full"
-                                            alt="avatar"
-                                        />
-                                    </div> */}
-
-                                            {/* <a id="not-clickable"></a> */}
                                             <a id="not-clickable">
                                                 <div className="w-10 h-10 overflow-hidden border-2 border-gray-400 rounded-full">
                                                     <img
-                                                        // src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
                                                         src={user?.photoURL}
-
                                                         className="object-cover w-full h-full"
                                                         alt="avatar"
                                                     />
                                                 </div>
                                             </a>
                                             <Tooltip anchorSelect="#not-clickable">
-                                                <button>{user?.displayName}</button>
+                                                <div className="px-2 py-1  rounded text-sm">
+                                                    {user?.displayName}
+                                                </div>
                                             </Tooltip>
                                         </button>
+
+
+
+
+
+
+
+
+
+
+
                                         {/* <img title={user.displayName} className='w-12 h-12 rounded-full' src={user.photoURL} alt="" /> */}
                                         <button onClick={handleLogout} className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">Logout</button>
                                     </div> : <div className='flex gap-2'>

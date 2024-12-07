@@ -1,6 +1,7 @@
 
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const AddVisa = () => {
 
@@ -61,6 +62,15 @@ const AddVisa = () => {
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Visa added successfully!",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
                 form.reset();
             })
             .catch(error => {
@@ -100,9 +110,10 @@ const AddVisa = () => {
                         <label className="block font-medium mb-1">Visa Type</label>
                         <select
                             name="visaType"
+                            defaultValue="Visa Type"
                             className="select select-bordered select-error w-full max-w-full sm:max-w-md"
                         >
-                            <option disabled selected>Visa Type</option>
+                            <option disabled >Visa Type</option>
                             <option value="Tourist visa">Tourist visa</option>
                             <option value="Student visa">Student visa</option>
                             <option value="Official visa">Official visa</option>
@@ -190,9 +201,10 @@ const AddVisa = () => {
                         <select
                             name="applicationMethod"
                             className="select select-bordered w-full"
+                            defaultValue="Visa Type"
 
                         >
-                            <option disabled selected>Application Method</option>
+                            <option disabled >Application Method</option>
                             <option value="online">Online</option>
                             <option value="in-person">In-person</option>
                         </select>

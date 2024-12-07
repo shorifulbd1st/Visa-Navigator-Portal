@@ -10,6 +10,7 @@ const VisaDetails = () => {
     const { _id, email, countryImage, countryName, visaType, processingTime, requiredDocuments, description, ageRestriction, fee, validity, applicationMethod } = visa;
 
     const currentDate = new Date().toISOString().split("T")[0];
+
     const [isModalOpen, setIsModalOpen] = useState(false);
     const loggedInEmail = user?.email;
     const openModal = () => {
