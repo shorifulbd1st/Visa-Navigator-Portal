@@ -24,17 +24,17 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: () => fetch("http://localhost:5000/LatestVisas")
+                loader: () => fetch("https://visa-navigator-portal-server-side.vercel.app/LatestVisas")
             },
             {
                 path: '/all-visas',
                 element: <AllVisas></AllVisas>,
-                loader: () => fetch("http://localhost:5000/allVisa")
+                loader: () => fetch("https://visa-navigator-portal-server-side.vercel.app/allVisa")
             },
             {
                 path: '/visa-details/:id',
                 element: <PrivateRouter><VisaDetails></VisaDetails></PrivateRouter>,
-                loader: ({ params }) => fetch(`http://localhost:5000/allVisa/${params.id}`)
+                loader: ({ params }) => fetch(`https://visa-navigator-portal-server-side.vercel.app/allVisa/${params.id}`)
             },
             {
                 path: '/add-visa',
@@ -43,17 +43,17 @@ const router = createBrowserRouter([
             {
                 path: '/my-added-visas/:email',
                 element: <PrivateRouter><MyAddedVisas></MyAddedVisas></PrivateRouter>,
-                loader: ({ params }) => fetch(`http://localhost:5000/myAddedVisa/${params.email}`)
+                loader: ({ params }) => fetch(`https://visa-navigator-portal-server-side.vercel.app/myAddedVisa/${params.email}`)
             },
             {
                 path: '/my-visa-application/:email',
                 element: <PrivateRouter><MyVisaApplication></MyVisaApplication></PrivateRouter>,
-                loader: ({ params }) => fetch(`http://localhost:5000/applyVisa/${params.email}`)
+                loader: ({ params }) => fetch(`https://visa-navigator-portal-server-side.vercel.app/applyVisa/${params.email}`)
             },
             // {
             //     path: '/update/:id',
             //     element: <UpdateVisa></UpdateVisa>,
-            //     loader: ({ params }) => fetch(`http://localhost:5000/allVisa/${params.id}`)
+            //     loader: ({ params }) => fetch(`https://visa-navigator-portal-server-side.vercel.app/allVisa/${params.id}`)
             // }
 
         ]

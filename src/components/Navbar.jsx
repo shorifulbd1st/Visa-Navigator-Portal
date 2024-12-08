@@ -1,9 +1,25 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import { AuthContext } from '../Provider/AuthProvider';
-
+const themes = [
+    'light',
+    'dark',]
 const Navbar = () => {
+
+    // use theme from local storage if available or set light theme
+    const [theme, setTheme] = useState(
+        localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
+    )
+
+    // set theme state in localstorage on mount & also update localstorage on state change
+    useEffect(() => {
+        localStorage.setItem('theme', theme)
+        const localTheme = localStorage.getItem('theme')
+        // add custom data-theme attribute to html tag required to update theme using DaisyUI
+        document.querySelector('html').setAttribute('data-theme', localTheme)
+    }, [theme])
+
     const [isOpen, setIsOpen] = useState(false);
     const { user, handleLogout } = useContext(AuthContext)
     // console.log(user?.photoURL)
@@ -134,15 +150,6 @@ const Navbar = () => {
                                         </button>
 
 
-
-
-
-
-
-
-
-
-
                                         {/* <img title={user.displayName} className='w-12 h-12 rounded-full' src={user.photoURL} alt="" /> */}
                                         <button onClick={handleLogout} className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">Logout</button>
                                     </div> : <div className='flex gap-2'>
@@ -151,6 +158,24 @@ const Navbar = () => {
                                     </div>
                                 }
                                 {/* <Link to={'/auth/login'} className='btn bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white text-lg'>Login</Link> */}
+                                <div className='flex-none'>
+                                    {/* Toggle Dropdown */}
+
+                                    <select
+                                        name='theme'
+                                        className='py-2 px-1 rounded border-2 focus-none outline-none'
+                                        onChange={e => setTheme(e.target.value)} //Updating the state here
+                                        id=''
+                                    >
+                                        {themes.map(theme => (
+                                            <option key={theme} value={theme}>
+                                                {theme[0].toUpperCase() + theme.slice(1)}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>

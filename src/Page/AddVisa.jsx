@@ -52,7 +52,7 @@ const AddVisa = () => {
         const email = user.email;
         const visa = { email, countryImage, countryName, visaType, processingTime, requiredDocuments, description, ageRestriction, fee, validity, applicationMethod };
 
-        fetch("http://localhost:5000/addVisa", {
+        fetch("https://visa-navigator-portal-server-side.vercel.app/addVisa", {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -75,10 +75,10 @@ const AddVisa = () => {
     };
 
     return (
-        <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-md">
+        <div className="max-w-4xl mx-auto p-6 dark:bg-white  rounded-lg shadow-md border-2 hover:border-blue-400 transition duration-300">
             <h2 className="text-2xl font-bold mb-4 text-center">Add Visa Page</h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
+            <form onSubmit={handleSubmit} className="space-y-4 ">
+                <div className="">
                     <label className="block font-medium mb-1">Country Image</label>
                     <input
                         type="url"

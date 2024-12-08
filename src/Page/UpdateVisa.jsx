@@ -42,7 +42,7 @@
 //         const email = user.email;
 //         const visa = { email, countryImage, countryName, visaType, processingTime, requiredDocuments, description, ageRestriction, fee, validity, applicationMethod };
 
-//         fetch("http://localhost:5000/addVisa", {
+//         fetch("https://visa-navigator-portal-server-side.vercel.app/addVisa", {
 //             method: "POST",
 //             headers: {
 //                 'content-type': 'application/json'

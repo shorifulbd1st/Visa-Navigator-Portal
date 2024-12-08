@@ -1,81 +1,119 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Banner = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
     const slides = [
         {
-            image: 'https://images.pexels.com/photos/4092214/pexels-photo-4092214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            title: 'Learn Spanish with Ease',
-            description: 'Master Spanish vocabulary and phrases in a simple, engaging way to improve your language skills.',
+            id: 1,
+            image:
+                "https://images.pexels.com/photos/4346403/pexels-photo-4346403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            title: "SAUDI ARABIA",
+            description:
+                "Saudi Arabia offers diverse visa options for tourism, education, and official purposes. Ensure all required documents are complete for a smooth and hassle-free application process.",
         },
         {
-            image: 'https://images.pexels.com/photos/3917323/pexels-photo-3917323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            title: 'Improve Your Language Skills',
-            description: 'Engage with interactive lessons that help you progress faster and retain more.',
+            id: 2,
+            image:
+                "https://images.pexels.com/photos/17690078/pexels-photo-17690078/free-photo-of-view-of-the-dome-of-the-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            title: "PALESTINE",
+            description:
+                "Travel to Palestine requires specific documentation, including an official or personal invitation letter. Ensure compliance with all visa requirements to facilitate a seamless entry experience.",
         },
         {
-            image: 'https://images.pexels.com/photos/1714201/pexels-photo-1714201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            title: 'Explore New Cultures',
-            description: 'Learn a language and immerse yourself in new cultures through language.',
-        }
+            id: 3,
+            image:
+                "https://images.pexels.com/photos/1592461/pexels-photo-1592461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            title: "AFGHANISTAN",
+            description:
+                "Afghanistan offers visas for business, tourism, and official engagements. Prepare all required documents thoroughly to ensure a secure and hassle-free travel process.",
+        },
+        {
+            id: 4,
+            image:
+                "https://images.pexels.com/photos/12251538/pexels-photo-12251538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            title: "BANGLADESH",
+            description:
+                "Bangladesh provides affordable visa options for tourists, students, and officials. Complete your application with the necessary documentation to ensure smooth entry to the country.",
+        },
+        {
+            id: 5,
+            image:
+                "https://images.pexels.com/photos/16883433/pexels-photo-16883433/free-photo-of-lake-in-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            title: "PAKISTAN",
+            description:
+                "Pakistan offers straightforward visa processes for students, tourists, and businesses. Ensure all documents are in order for a smooth and efficient application experience.",
+        },
     ];
 
-    const totalSlides = slides.length;
+    const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
     };
 
     const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
+        setCurrentSlide((prev) =>
+            prev === 0 ? slides.length - 1 : prev - 1
+        );
     };
 
+    useEffect(() => {
+        const autoSlide = setInterval(() => {
+            nextSlide();
+        }, 7000);
+        return () => clearInterval(autoSlide);
+    }, []);
+
     return (
-        <div className="relative w-full h-96 overflow-hidden">
-            {/* Carousel Container */}
+        <div className="relative w-full h-screen overflow-hidden">
             <div
-                className="flex transition-transform duration-500"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                className="absolute top-0 left-0 w-full h-full bg-cover bg-center transition-all duration-1000"
+                style={{
+                    backgroundImage: `url(${slides[currentSlide].image})`,
+                }}
             >
-                {slides.map((slide, index) => (
-                    <div key={index} className="w-full flex-shrink-0 relative">
-                        <img
-                            src={slide.image}
-                            alt={slide.title}
-                            className="w-full h-full object-cover"
-                        />
-                        {/* Slide Content */}
-                        <div className="absolute bottom-10 left-10 text-white bg-black bg-opacity-50 p-4">
-                            <h2 className="text-3xl font-bold">{slide.title}</h2>
-                            <p className="text-xl">{slide.description}</p>
-                        </div>
+                <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white max-w-md">
+                    <h1 className="text-5xl font-bold uppercase">
+                        {slides[currentSlide].title}
+                    </h1>
+                    <p className="mt-4 text-lg">{slides[currentSlide].description}</p>
+                    <div className="mt-6 flex space-x-4">
+                        <button className="px-6 py-2 bg-green-500 text-white rounded hover:bg-green-700">
+                            Learn More
+                        </button>
+                        <button className="px-6 py-2 bg-transparent border border-white text-white rounded hover:bg-white hover:text-black">
+                            Subscribe
+                        </button>
                     </div>
-                ))}
+                </div>
             </div>
 
             {/* Navigation Arrows */}
-            <button
-                onClick={prevSlide}
-                className="absolute top-1/2 left-2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full"
-            >
-                &#10094;
-            </button>
-            <button
-                onClick={nextSlide}
-                className="absolute top-1/2 right-2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-3 rounded-full"
-            >
-                &#10095;
-            </button>
+            <div className="absolute top-1/2 left-4 transform -translate-y-1/2 z-10">
+                <button
+                    className="w-10 h-10 bg-white text-black rounded-full shadow hover:bg-gray-200"
+                    onClick={prevSlide}
+                >
+                    &#8249;
+                </button>
+            </div>
+            <div className="absolute top-1/2 right-4 transform -translate-y-1/2 z-10">
+                <button
+                    className="w-10 h-10 bg-white text-black rounded-full shadow hover:bg-gray-200"
+                    onClick={nextSlide}
+                >
+                    &#8250;
+                </button>
+            </div>
 
-            {/* Indicators */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                {slides.map((_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => setCurrentIndex(index)}
-                        className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-white' : 'bg-gray-500'}`}
-                    />
-                ))}
+            {/* Time Bar */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-gray-300">
+                <div
+                    className="h-1 bg-green-500 transition-all duration-7000"
+                    style={{
+                        width: `${((currentSlide + 1) / slides.length) * 100}%`,
+                    }}
+                ></div>
             </div>
         </div>
     );

@@ -47,7 +47,7 @@ const VisaDetails = () => {
             visa
         };
         // console.log(data);
-        fetch('http://localhost:5000/applyVisa', {
+        fetch('https://visa-navigator-portal-server-side.vercel.app/applyVisa', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
