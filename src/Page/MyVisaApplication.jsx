@@ -7,8 +7,7 @@ const MyVisaApplication = () => {
     const [myApplyVisa, setMyApplyVisa] = useState(data);
     // console.log(myVisa);
     return (
-        <div>
-            <h1>I am MyVisaApplication</h1>
+        <div className='w-11/12 mx-auto my-5'>
             {
                 myApplyVisa.length > 0 ? <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
 
@@ -20,7 +19,7 @@ const MyVisaApplication = () => {
                         ></MySingleApplyVisa>)
                     }
 
-                </div> : <div><p>visa not found</p></div>
+                </div> : <div><p>You have not applied for a visa yet.</p></div>
             }
         </div>
     )

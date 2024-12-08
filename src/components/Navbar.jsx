@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import { AuthContext } from '../Provider/AuthProvider';
+import { GiCommercialAirplane } from "react-icons/gi";
 const themes = [
     'light',
     'dark',]
@@ -36,7 +37,11 @@ const Navbar = () => {
                                     alt="Logo"
                                 />
                             </a> */}
-                            <h1 className='text-lg font-bold'>Visa Navigator</h1>
+                            <div className='relative'>
+                                <h1 className='text-lg font-bold text-pink-400'>Visa Navigator</h1>
+                                <div className='absolute top-0 left-32 -ml-2'><span className='text-xl '><GiCommercialAirplane /></span></div>
+                            </div>
+
 
                             {/* Mobile menu button */}
                             <div className="flex lg:hidden">

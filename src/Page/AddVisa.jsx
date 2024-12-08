@@ -75,7 +75,7 @@ const AddVisa = () => {
     };
 
     return (
-        <div className="max-w-4xl mx-auto p-6 dark:bg-white  rounded-lg shadow-md border-2 hover:border-blue-400 transition duration-300">
+        <div className="my-8 max-w-4xl mx-auto p-6 dark:bg-white  rounded-lg shadow-md border-2 hover:border-blue-400 transition duration-300">
             <h2 className="text-2xl font-bold mb-4 text-center">Add Visa Page</h2>
             <form onSubmit={handleSubmit} className="space-y-4 ">
                 <div className="">
