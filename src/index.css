@@ -4,10 +4,23 @@
 
 .active {
   /* color: white; */
-  text-decoration: underline  red;
+  text-decoration: underline red;
 }
 
 html {
   overflow-y: scroll;
 }
 
+.fifty-off {
+  background-color: rgba(0, 0, 0, 0.521);
+  color: white;
+  /* width: ; */
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+
+}

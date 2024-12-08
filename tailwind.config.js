@@ -7,9 +7,9 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        customRed: '#ffccd5', // Light red color
-      },
+      // colors: {
+      //   customRed: '#ffccd5', // Light red color
+      // },
     },
   },
   plugins: [daisyui],

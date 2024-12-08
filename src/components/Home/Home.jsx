@@ -5,6 +5,7 @@ import { useLoaderData } from 'react-router-dom'
 import Slider from '../Slider'
 import Carousel from '../Carousel/Carousel'
 import OurService from '../../Page/OurService'
+import TopTravelDestinations from '../../Page/TopTravelDestinations'
 
 const Home = () => {
     const data = useLoaderData();
@@ -24,6 +25,7 @@ const Home = () => {
 
             </div>
             <OurService></OurService>
+            <TopTravelDestinations></TopTravelDestinations>
         </div>
     )
 }
