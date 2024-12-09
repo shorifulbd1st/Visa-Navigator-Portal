@@ -1,107 +1,4 @@
-// import React, { useState } from 'react'
 
-// const Banner = () => {
-//     const [FadeInAnimation, setFadeInAnimation] = useState("null");
-//     const [MoveUpAnimation, setMoveUpAnimation] = useState("null");
-//     const [forwardSlideAnimation, setForwardSlideAnm] = useState("null");
-//     const [BackwardSlideAnimation, setBackwardSlideAnm] = useState("null");
-
-//     const [ImageArray, setImageArray] = useState([
-//         {
-//             ImgSrc: 'https://images.pexels.com/photos/1592461/pexels-photo-1592461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-//             title: "Kashmir",
-//         },
-//         {
-//             ImgSrc: 'https://images.pexels.com/photos/12251538/pexels-photo-12251538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-//             title: "Manali",
-//         },
-//         {
-//             ImgSrc: 'https://images.pexels.com/photos/1592461/pexels-photo-1592461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-//             title: "Manali",
-//         },
-
-//     ])
-
-//     const ForwardSlide = () => {
-//         setFadeInAnimation("FadeInAnm");
-//         setMoveUpAnimation("MoveUpAnm");
-//         setForwardSlideAnm("forwardslideanm")
-
-//         setTimeout(() => {
-//             setFadeInAnimation("null")
-//             setMoveUpAnimation("null")
-//             setForwardSlideAnm("null")
-//         }, 700);
-
-//         //--------------------//
-//         const data = ImageArray[0];
-//         setImageArray([...ImageArray, data]);
-
-//         setImageArray((prevArr) => {
-//             const newArr = [...prevArr];
-//             newArr.shift();
-//             return newArr;
-//         })
-//     }
-
-//     const BackwardSlide = () => {
-
-//         setFadeInAnimation("FadeInAnm");
-//         setMoveUpAnimation("MoveUpAnm")
-//         setBackwardSlideAnm("backwardSlideanm")
-
-//         setTimeout(() => {
-//             setFadeInAnimation("null")
-//             setMoveUpAnimation("null")
-//             setBackwardSlideAnm("null")
-
-//         }, 700);
-
-//         //--------------------//
-
-
-//         const data = ImageArray[ImageArray.length - 1];
-//         setImageArray([data, ...ImageArray]);
-
-//         setImageArray((prevArr) => {
-//             const newArr = [...prevArr];
-//             newArr.pop();
-//             return newArr;
-//         })
-//     }
-//     return (
-//         <div>
-//             <div className='w-[1000px] h-[450px] flex items-center justify-end relative'>
-//                 <div className='flex overflow-hidden'>
-//                     {
-//                         ImageArray.map((item, index) => (
-//                             <div key={index} className={(index === 0) ? `${FadeInAnimation} absolute top-0 left-0 w-[85%] h-full z-0 rounded-xl container-shadow  transition-all duration-700` : `${forwardSlideAnimation} ${BackwardSlideAnimation} h-[200px] w-[140px] my-8 mx-2 z-10 rounded-xl item-shadow transition-all duration-700S`}>
-//                                 <img className='h-full w-full bg-cover object-center rounded-xl' src={item.ImgSrc} />
-//                                 <div className={`${MoveUpAnimation} h-full w-[350px] absolute top-0 left-0 flex items-center z-20 text-white px-10 transition-all duration-700`}>
-//                                     {(index === 0) ?
-//                                         <div >
-//                                             <h2 className='text-xl font-bold'>{item.title}</h2>
-//                                             <p className='text-xs '>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-//                                             <button className='px-4 py-1 my-1 font-semibold text-black bg-white rounded-sm '>Explore</button>
-//                                         </div> : null
-//                                     }
-//                                 </div>
-//                             </div>
-//                         ))
-//                     }
-//                     <div className='w-[85%] absolute left-0 bottom-0 py-5 flex items-center justify-center z-20'>
-//                         <div className='flex gap-2'>
-//                             <i onClick={BackwardSlide} className="ri-arrow-left-line bg-white px-1 py-1 rounded-lg cursor-pointer font-bold hover:opacity-80"></i>
-//                             <i onClick={ForwardSlide} className="ri-arrow-right-line bg-white px-1 py-1 rounded-lg cursor-pointer font-bold hover:opacity-80"></i>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default Banner
 import React, { useState } from 'react';
 import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidRightArrow } from "react-icons/bi";
@@ -132,14 +29,7 @@ function Slider() {
             ImgSrc: 'https://images.pexels.com/photos/12251538/pexels-photo-12251538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             description: "Bangladesh provides affordable visa options for tourists, students, and officials.Complete your application with the necessary documentation to ensure smooth entry to the country."
         },
-        // {
-        //     title: 'Pakistan',
-        //     ImgSrc: 'https://images.pexels.com/photos/16883433/pexels-photo-16883433/free-photo-of-lake-in-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        // },
-        // {
-        //     title: 'Syria',
-        //     ImgSrc: 'https://images.pexels.com/photos/6918512/pexels-photo-6918512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        // }
+
 
 
     ]);

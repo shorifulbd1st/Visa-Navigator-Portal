@@ -8,7 +8,7 @@ const VisaDetails = () => {
     const { user, notify } = useContext(AuthContext);
 
     const { _id, email, countryImage, countryName, visaType, processingTime, requiredDocuments, description, ageRestriction, fee, validity, applicationMethod } = visa;
-
+    // console.log(requiredDocuments)
     const currentDate = new Date().toISOString().split("T")[0];
 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,17 +28,7 @@ const VisaDetails = () => {
         const firstName = form.firstName.value.trim();
         const lastName = form.lastName.value.trim();
 
-        // Manual Validation
-        // if (!firstName) {
-        //     alert("First Name is required");
-        //     return;
-        // }
-        // if (!lastName) {
-        //     alert("Last Name is required");
-        //     return;
-        // }
 
-        // If validation passes
         const data = {
             email: loggedInEmail,
             firstName,
@@ -62,7 +52,6 @@ const VisaDetails = () => {
                 }
             })
 
-        // Proceed with the form submission or API call
         closeModal();
     };
 
@@ -85,8 +74,8 @@ const VisaDetails = () => {
                     <div className="mt-4">
                         <h3 className="font-semibold text-gray-800 dark:text-white">Required Documents:</h3>
                         <ul className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                            {requiredDocuments.map((doc, index) => (
-                                <li key={index} className="flex items-center">
+                            {requiredDocuments?.map((doc, index) => (
+                                <li key={index && index} className="flex items-center">
                                     <svg
                                         className="w-4 h-4 mr-2 text-blue-500 dark:text-blue-400"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +90,7 @@ const VisaDetails = () => {
                                             d="M5 13l4 4L19 7"
                                         />
                                     </svg>
-                                    {doc}
+                                    {doc && doc}
                                 </li>
                             ))}
                         </ul>
@@ -130,19 +119,11 @@ const VisaDetails = () => {
 
 
             {/* open modal */}
-            <div className="relative flex justify-center">
-                {/* Button to open modal */}
-                {/* <button
-                    onClick={openModal}
-                    className="px-6 py-2 mx-auto tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
-                >
-                    Open Modal
-                </button> */}
+            <div className="relative flex justify-center my-10">
 
-                {/* Modal */}
                 {isModalOpen && (
                     <div
-                        className="fixed inset-0 z-10 overflow-y-auto bg-black bg-opacity-50"
+                        className="fixed inset-0 z-40 my-10 overflow-y-auto "
                         aria-labelledby="modal-title"
                         role="dialog"
                         aria-modal="true"

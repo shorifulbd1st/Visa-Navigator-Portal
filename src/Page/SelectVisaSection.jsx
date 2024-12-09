@@ -5,23 +5,19 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 function SelectVisaSection({ allVisa, setAllVisa }) {
     const [selectedVisa, setSelectedVisa] = useState("");
 
-    // const handleSelectChange = (e) => {
-    //     setSelectedVisa(e.target.value);
-    // };
+
 
     useEffect(() => {
-        // console.log(typeof selectedVisa)
         if (selectedVisa === "All visa") {
 
             fetch("https://visa-navigator-portal-server-side.vercel.app/allVisa")
                 .then(res => res.json())
                 .then(data => {
-                    // console.log(data)
                     setAllVisa(data)
                 })
         }
         else {
-            fetch(`https://visa-navigator-portal-server-side.vercel.app/allVisa/${selectedVisa}`)
+            fetch(`https://visa-navigator-portal-server-side.vercel.app/allVisa/Type/${selectedVisa}`)
                 .then(res => res.json())
                 .then(data => {
                     setAllVisa(data)
@@ -29,10 +25,7 @@ function SelectVisaSection({ allVisa, setAllVisa }) {
         }
 
     }, [selectedVisa])
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    // Add further actions like form submission here
-    // };
+
 
     return (
         <div

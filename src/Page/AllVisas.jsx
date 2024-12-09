@@ -20,17 +20,17 @@ const AllVisas = () => {
                         <SelectVisaSection allVisa={allVisa} setAllVisa={setAllVisa}></SelectVisaSection>
 
                         <div>
-                            <h1 className="text-3xl lg:text-4xl my-10 font-extrabold text-center text-transparent bg-clip-text capitalize  bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">all available visa {allVisa.length} </h1>
+                            {/* <h1 className="text-3xl lg:text-4xl my-10 font-extrabold text-center text-transparent bg-clip-text capitalize  bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg"> {allVisa.length} </h1> */}
 
-                            <h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
-                                Life is simple{' '}
-                                <span style={{ color: 'red', fontWeight: 'bold' }}>
+                            <h1 className='text-center my-5'>
+                                {/* Life is simple{' '} */}
+                                <span className="text-3xl lg:text-4xl my-10 font-extrabold text-center text-transparent bg-clip-text capitalize bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">
 
                                     <Typewriter
-                                        words={['Eat', 'Sleep', 'Code', 'Repeat!']}
-                                        loop={5}
+                                        words={['all available visa']}
+                                        loop={Infinity}
                                         cursor
-                                        cursorStyle='_'
+                                        // cursorStyle='_'
                                         typeSpeed={70}
                                         deleteSpeed={50}
                                         delaySpeed={1000}
