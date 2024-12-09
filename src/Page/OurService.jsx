@@ -1,11 +1,11 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
-
+import { GiCommercialAirplane } from "react-icons/gi";
 const OurService = () => {
     return (
         <div className='my-9'>
-            <h1 className='text-center font-bold text-2xl dark:text-white'> Our Excellence customer Service</h1>
+            <h1 className="text-2xl lg:text-4xl my-5 font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg"> Our Excellence customer Service</h1>
             <div className="hero my-8">
 
                 <div className="hero-content flex flex-col lg:grid lg:grid-cols-2 gap-2  ">
@@ -43,26 +43,26 @@ const OurService = () => {
                         <div className="w-full lg:col-span-1 shadow-2xl ">
                             <div className="bg-[#1E3442] text-white py-8 px-5 rounded-lg
                             h-full">
-                                <h2 className="text-4xl font-semibold mb-6 text-center">Why choose Visa Navigator?</h2>
+                                <h2 className="text-2xl lg:text-4xl font-semibold mb-6 text-center">Why choose Visa Navigator?</h2>
 
                                 <div className="space-y-4">
                                     <div>
-                                        <h3 className="text-xl font-semibold">✅ 100% Application Accuracy</h3>
-                                        <p className="text-lg">
+                                        <h3 className="text-xl font-semibold flex items-center gap-1"><span><GiCommercialAirplane /></span>  100% Application Accuracy</h3>
+                                        <p className="text-lg ml-6">
                                             Travelers have the confidence of knowing their applications are completely accurate and error-free.
                                         </p>
                                     </div>
 
                                     <div>
-                                        <h3 className="text-xl font-semibold">✅Service Personalized to You</h3>
-                                        <p className="text-lg">
+                                        <h3 className="text-xl font-semibold flex items-center gap-1"><span><GiCommercialAirplane /></span>Service Personalized to You</h3>
+                                        <p className="text-lg ml-6">
                                             Every application receives a personal review and is checked against the world’s largest database of travel requirements.
                                         </p>
                                     </div>
 
                                     <div>
-                                        <h3 className="text-xl font-semibold">✅    Global Leader in Immigration and Travel Management</h3>
-                                        <p className="text-lg">
+                                        <h3 className="text-xl font-semibold flex  gap-1"><span className='mt-2'><GiCommercialAirplane /></span>Global Leader in Immigration and Travel Management</h3>
+                                        <p className="text-lg ml-6">
                                             1,600+ immigration and visa experts in 79 offices across 29 countries. All backed by industry-leading technology and 35 years of expertise.
                                         </p>
                                     </div>

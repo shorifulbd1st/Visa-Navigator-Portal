@@ -4,13 +4,13 @@ const TopTravelDestinations = () => {
     return (
         <div className='w-11/12 mx-auto my-10'>
             {/* <h1 className='text-3xl font-semibold '>Top Travel Destinations</h1> */}
-            <h1 className="text-2xl my-5 font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">
+            <h1 className="text-3xl lg:text-4xl my-5 font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">
                 Top Travel Destinations
             </h1>
 
-            <div className='md:grid grid-cols-12 grid-rows-2 gap-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-12 grid-rows-2 gap-4'>
                 <div className='col-span-6 row-span-2'>
-                    <div className="h-full relative  bg-white rounded-lg shadow-lg">
+                    <div className="h-full relative bg-white rounded-lg shadow-lg">
                         {/* Avatar Section */}
                         <img
                             className="object-cover object-center h-full w-full rounded-xl"
@@ -25,7 +25,7 @@ const TopTravelDestinations = () => {
 
                     </div>
                 </div>
-                <div className='row-span-2 col-span-6 grid grid-cols-6 gap-3 '>
+                <div className='row-span-2 col-span-6 grid grid-cols-1 md:grid-cols-6 gap-3 '>
                     <div className='col-span-3'>
                         <div className="relative w-full overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
                             {/* Avatar Section */}

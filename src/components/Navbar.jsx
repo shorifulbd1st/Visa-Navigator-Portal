@@ -25,9 +25,9 @@ const Navbar = () => {
     const { user, handleLogout } = useContext(AuthContext)
     // console.log(user?.photoURL)
     return (
-        <div className='sticky top-0 z-10'>
+        <div className='sticky top-0 z-10 '>
             <nav className="relative bg-white shadow dark:bg-gray-800 ">
-                <div className="w-11/12 py-6 mx-auto">
+                <div className="w-11/12 py-4 mx-auto">
                     <div className="lg:flex justify-between">
                         <div className="flex items-center justify-between">
                             {/* <a href="#">
@@ -37,9 +37,11 @@ const Navbar = () => {
                                     alt="Logo"
                                 />
                             </a> */}
-                            <div className='relative'>
-                                <h1 className='text-lg font-bold text-pink-400'>Visa Navigator</h1>
-                                <div className='absolute top-0 left-32 -ml-2'><span className='text-xl '><GiCommercialAirplane /></span></div>
+
+                            <div className='relative flex justify-center items-center'>
+                                <img className='w-12' src="https://i.ibb.co.com/1KRMjSB/imagebb.png" alt="" />
+                                <h1 className="text-2xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">Visa Navigator</h1>
+                                <div className='absolute top-0 left-56 -ml-2'><span className='text-xl '><GiCommercialAirplane /></span></div>
                             </div>
 
 
