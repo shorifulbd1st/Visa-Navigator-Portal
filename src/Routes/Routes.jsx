@@ -14,12 +14,14 @@ import Login from "../Page/Login";
 import PrivateRouter from "./PrivateRoute";
 import VisaDetails from "../Page/VisaDetails";
 import UpdateVisa from "../Page/UpdateVisa";
+import ErrorPage from "../components/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <HomeLayout></HomeLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
