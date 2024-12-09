@@ -30,22 +30,12 @@ const Navbar = () => {
                 <div className="w-11/12 py-4 mx-auto">
                     <div className="lg:flex justify-between">
                         <div className="flex items-center justify-between">
-                            {/* <a href="#">
-                                <img
-                                    className="w-auto h-6 sm:h-7"
-                                    src="https://merakiui.com/images/full-logo.svg"
-                                    alt="Logo"
-                                />
-                            </a> */}
-
                             <div className='relative flex justify-center items-center'>
                                 <img className='w-12' src="https://i.ibb.co.com/1KRMjSB/imagebb.png" alt="" />
                                 <h1 className="text-2xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">Visa Navigator</h1>
                                 <div className='absolute top-0 left-56 -ml-2'><span className='text-xl '><GiCommercialAirplane /></span></div>
                             </div>
 
-
-                            {/* Mobile menu button */}
                             <div className="flex lg:hidden">
                                 <button
                                     onClick={() => setIsOpen(!isOpen)}
@@ -88,7 +78,6 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* Mobile Menu */}
                         <div
                             className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:flex lg:items-center ${isOpen
                                 ? 'translate-x-0 opacity-100'
@@ -125,14 +114,6 @@ const Navbar = () => {
                             </div>
 
                             <div className="flex items-center mt-4 lg:mt-0 gap-3">
-                                {/* <button
-                                    className="hidden mx-4 text-gray-600 transition-colors duration-300 transform lg:block dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none"
-                                    aria-label="show notifications"
-                                >
-
-                                </button> */}
-
-
                                 {
                                     user && user?.email ? <div className='flex justify-between items-center gap-2'>
                                         <button
@@ -156,22 +137,20 @@ const Navbar = () => {
                                             </Tooltip>
                                         </button>
 
-
-                                        {/* <img title={user.displayName} className='w-12 h-12 rounded-full' src={user.photoURL} alt="" /> */}
                                         <button onClick={handleLogout} className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">Logout</button>
                                     </div> : <div className='flex gap-2'>
                                         <Link to={'/auth/register'} className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">Register</Link>
                                         <Link to={'/auth/login'} className=" px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">Login</Link>
                                     </div>
                                 }
-                                {/* <Link to={'/auth/login'} className='btn bg-gradient-to-r from-[#FF0000] to-[#FF8938] text-white text-lg'>Login</Link> */}
+
                                 <div className='flex-none'>
-                                    {/* Toggle Dropdown */}
+
 
                                     <select
                                         name='theme'
                                         className='py-2 px-1 rounded border-2 focus-none outline-none'
-                                        onChange={e => setTheme(e.target.value)} //Updating the state here
+                                        onChange={e => setTheme(e.target.value)}
                                         id=''
                                     >
                                         {themes.map(theme => (
@@ -181,8 +160,6 @@ const Navbar = () => {
                                         ))}
                                     </select>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
