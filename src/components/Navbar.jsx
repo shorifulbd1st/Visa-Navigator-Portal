@@ -25,7 +25,7 @@ const Navbar = () => {
     const { user, handleLogout } = useContext(AuthContext)
     // console.log(user?.photoURL)
     return (
-        <div className='sticky top-0 z-10 '>
+        <div className='sticky top-0 z-50 '>
             <nav className="relative bg-white shadow dark:bg-gray-800 ">
                 <div className="w-11/12 py-4 mx-auto">
                     <div className="lg:flex justify-between">

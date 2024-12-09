@@ -7,7 +7,7 @@ const PrivateRouter = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
     if (loading) return <Loading></Loading>
     if (!user) {
-        console.log('user not login')
+        // console.log('user not login')
         return <Navigate to='/auth/login'></Navigate>
     }
     return (
