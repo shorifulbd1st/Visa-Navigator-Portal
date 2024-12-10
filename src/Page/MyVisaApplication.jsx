@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import MySingleApplyVisa from './MySingleApplyVisa';
 import { IoSearchOutline } from "react-icons/io5";
+
+import { Typewriter } from 'react-simple-typewriter'
 const MyVisaApplication = () => {
     const data = useLoaderData();
     const [myApplyVisa, setMyApplyVisa] = useState(data);
@@ -30,6 +32,23 @@ const MyVisaApplication = () => {
                             <div className='text-3xl -ml-8'><IoSearchOutline /></div>
                         </div>
                     </div >
+                    <h1 className='text-center my-5'>
+                        {/* Life is simple{' '} */}
+                        <span className="text-3xl lg:text-4xl my-10 font-extrabold text-center text-transparent bg-clip-text capitalize bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">
+
+                            <Typewriter
+                                words={['my all apply visa']}
+                                loop={Infinity}
+                                cursor
+                                // cursorStyle='_'
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1000}
+                            // onLoopDone={handleDone}
+                            // onType={handleType}
+                            />
+                        </span>
+                    </h1>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                         {
                             myApplyVisa.map(singleVisa => <MySingleApplyVisa key={singleVisa._id}

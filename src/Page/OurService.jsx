@@ -5,11 +5,13 @@ import { GiCommercialAirplane } from "react-icons/gi";
 const OurService = () => {
     return (
         <div className='my-9'>
-            <h1 className="text-2xl lg:text-4xl my-5 font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg"> Our Excellence customer Service</h1>
+            {/* <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quia, cupiditate aut quibusdam corporis deserunt eaque libero. Quibusdam, repudiandae ullam sit ipsum repellendus tempore temporibus accusantium eligendi culpa natus rerum!</div> */}
+            <h1 data-aos="fade-right" data-aos-duration="500" className="text-2xl lg:text-4xl my-5 font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg"> Our Excellence customer Service</h1>
+
             <div className="hero my-8">
 
                 <div className="hero-content flex flex-col lg:grid lg:grid-cols-2 gap-2  ">
-                    <div className='rounded-lg'>
+                    <div data-aos="fade-up" data-aos-duration="500" className='rounded-lg'>
 
 
                         <div className="carousel-container lg:col-span-1 rounded-lg overflow-hidden">
@@ -39,7 +41,7 @@ const OurService = () => {
                             </Carousel>
                         </div>
                     </div>
-                    <div className='h-full '>
+                    <div data-aos="fade-up" data-aos-duration="500" className='h-full '>
                         <div className="w-full lg:col-span-1 shadow-2xl ">
                             <div className="bg-[#1E3442] text-white py-8 px-5 rounded-lg
                             h-full">

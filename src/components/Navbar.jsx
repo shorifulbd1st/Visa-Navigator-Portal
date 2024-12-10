@@ -3,27 +3,27 @@ import { Link, NavLink } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import { AuthContext } from '../Provider/AuthProvider';
 import { GiCommercialAirplane } from "react-icons/gi";
+import { Typewriter } from 'react-simple-typewriter'
+
 const themes = [
+
     'light',
     'dark',]
 const Navbar = () => {
 
-    // use theme from local storage if available or set light theme
     const [theme, setTheme] = useState(
         localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
     )
 
-    // set theme state in localstorage on mount & also update localstorage on state change
     useEffect(() => {
         localStorage.setItem('theme', theme)
         const localTheme = localStorage.getItem('theme')
-        // add custom data-theme attribute to html tag required to update theme using DaisyUI
         document.querySelector('html').setAttribute('data-theme', localTheme)
     }, [theme])
 
     const [isOpen, setIsOpen] = useState(false);
     const { user, handleLogout } = useContext(AuthContext)
-    // console.log(user?.photoURL)
+
     return (
         <div className='sticky top-0 z-40 '>
             <nav className="relative bg-white shadow dark:bg-gray-800 ">
@@ -32,8 +32,27 @@ const Navbar = () => {
                         <div className="flex items-center justify-between">
                             <div className='relative flex justify-center items-center'>
                                 <img className='w-12' src="https://i.ibb.co.com/1KRMjSB/imagebb.png" alt="" />
-                                <h1 className="text-2xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">Visa Navigator</h1>
-                                <div className='absolute top-0 left-56 -ml-2'><span className='text-xl '><GiCommercialAirplane /></span></div>
+
+                                <h1 className='text-center flex'>
+
+                                    <span className="text-2xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">
+
+                                        <Typewriter
+                                            words={['Visa Navigator']}
+                                            loop={Infinity}
+                                            cursor
+                                            // cursorStyle='_'
+                                            typeSpeed={70}
+                                            deleteSpeed={50}
+                                            delaySpeed={1000}
+                                        // onLoopDone={handleDone}
+                                        // onType={handleType}
+                                        />
+                                    </span>
+                                    <span className='text-xl'><GiCommercialAirplane /></span>
+                                </h1>
+                                {/* <div className='absolute top-0 left-56 -ml-2'></div> */}
+
                             </div>
 
                             <div className="flex lg:hidden">

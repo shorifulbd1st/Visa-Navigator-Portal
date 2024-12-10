@@ -57,7 +57,7 @@ const VisaDetails = () => {
 
     return (
         <div className='w-11/12 mx-auto my-5 flex justify-center items-center'>
-            <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 border-2 hover:border-blue-400 transition duration-300">
                 <img
                     className="object-cover w-full h-64"
                     src={countryImage}
@@ -123,13 +123,13 @@ const VisaDetails = () => {
 
                 {isModalOpen && (
                     <div
-                        className="fixed inset-0 z-50 my-10 overflow-y-auto "
+                        className="fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-50"
                         aria-labelledby="modal-title"
                         role="dialog"
                         aria-modal="true"
                     >
                         <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-                            <div className="border border-success  relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:w-full sm:max-w-sm sm:p-6 sm:align-middle">
+                            <div className="border-2 hover:border-blue-400  duration-300  relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:w-full sm:max-w-sm sm:p-6 sm:align-middle">
                                 <h3
                                     className="text-lg font-medium leading-6 text-gray-800 capitalize dark:text-white"
                                     id="modal-title"

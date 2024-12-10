@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="w-full sm:w-1/3 lg:w-1/4 mb-0 flex items-center">
                         <div className="px-6 ">
                             <img
-                                className="w-36"
+                                className="w-36 animate__animated  animate__infinite animate__zoomIn"
                                 src="https://i.ibb.co.com/1KRMjSB/imagebb.png"
                                 alt="Brand Logo"
                             />
@@ -76,8 +76,8 @@ const Footer = () => {
                                 visanavigator@email.com
                             </span>
                             <div className="flex space-x-4 cursor-pointer mt-3">
-                                <i className="text-3xl fab fa-facebook text-[#1877F2]"></i>
-                                <i className="text-3xl fab fa-twitter text-[#1DA1F2]"></i>
+                                <i className="animate__animated animate__bounce animate__infinite text-3xl fab fa-facebook text-[#1877F2]"></i>
+                                <i className=" text-3xl fab fa-twitter text-[#1DA1F2]"></i>
                                 <i className="text-3xl fab fa-instagram text-[#e92d6be1]"></i>
                                 <i className="text-3xl fab fa-linkedin text-[#0077B5]"></i>
                             </div>

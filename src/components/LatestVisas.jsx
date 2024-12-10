@@ -12,9 +12,11 @@ const LatestVisas = ({ data }) => {
                         No user has added a visa yet.
                     </h1> */}
                 </div> : <div>
-                    <h1 className="text-3xl lg:text-5xl my-5 font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">
+                    <h1 data-aos="zoom-in" data-aos-duration="500" className="  text-3xl lg:text-5xl my-5 font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">
                         Our Latest Visas
                     </h1>
+
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {data.map((visa) => (
                             <SingleVisa key={visa._id} visa={visa}></SingleVisa>
