@@ -1,11 +1,22 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import MySingleVisa from './MySingleVisa';
 import { Typewriter } from 'react-simple-typewriter'
+import { AuthContext } from '../Provider/AuthProvider';
 const MyAddedVisas = () => {
     const data = useLoaderData();
     const [myAddedVisa, setMyAddedVisa] = useState(data);
     // console.log(data)
+    const { user } = useContext(AuthContext);
+    // console.log('user', user?.email)
+    // console.log('hello')
+    // useEffect(() => {
+    //     fetch(`https://visa-navigator-portal-server-side.vercel.app/myAddedVisa/${user?.email}`)
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setMyAddedVisa(data)
+    //         })
+    // }, [])
     return (
         <div className='w-11/12 mx-auto my-5'>
 

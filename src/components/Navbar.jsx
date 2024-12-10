@@ -115,30 +115,30 @@ const Navbar = () => {
                                 </NavLink>
 
 
+                                {user &&
+                                    <NavLink to={'/add-visa'}
+                                        className="px-2 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        Add Visa
+                                    </NavLink>
+                                }
+                                {user &&
 
-                                <NavLink to={'/add-visa'}
-                                    className="px-2 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-                                >
-                                    Add Visa
-                                </NavLink>
+                                    <NavLink to={`/my-added-visas/${user?.email}`}
+                                        className="px-2 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        My added visas
+                                    </NavLink>
+                                }
 
 
-
-                                <NavLink to={`/my-added-visas/${user?.email}`}
-                                    className="px-2 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-                                >
-                                    My added visas
-                                </NavLink>
-
-
-
-
-                                <NavLink to={`/my-visa-application/${user?.email}`}
-                                    className="px-2 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-                                >
-                                    My Visa applications
-                                </NavLink>
-
+                                {user &&
+                                    <NavLink to={`/my-visa-application/${user?.email}`}
+                                        className="px-2 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    >
+                                        My Visa applications
+                                    </NavLink>
+                                }
                             </div>
 
                             <div className="flex items-center mt-4 lg:mt-0 gap-3">

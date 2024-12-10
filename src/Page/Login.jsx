@@ -27,8 +27,9 @@ const Login = () => {
             .then((result) => {
                 notify('success', `Welcome ${result.user.displayName}`);
                 // navigate(from, { replace: true });
-                // const redirectPath = location.state?.from || '/';
+                // const redirectPath = location?.state?.from || '/';
                 navigate('/')
+                // navigate(redirectPath)
             })
             .catch((error) => {
                 notify('error', `Error: ${error.message}`);

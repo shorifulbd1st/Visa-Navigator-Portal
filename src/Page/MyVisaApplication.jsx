@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import MySingleApplyVisa from './MySingleApplyVisa';
 import { IoSearchOutline } from "react-icons/io5";
 
 import { Typewriter } from 'react-simple-typewriter'
 const MyVisaApplication = () => {
+
     const data = useLoaderData();
     const [myApplyVisa, setMyApplyVisa] = useState(data);
     const [inputValue, setInputValue] = useState('');
 
     useEffect(() => {
+
         const searchResult = [...myApplyVisa].filter(visa => visa.visa.countryName.toLowerCase().includes(inputValue.toLowerCase()))
+
         if (searchResult.length) {
             setMyApplyVisa(searchResult)
         }
