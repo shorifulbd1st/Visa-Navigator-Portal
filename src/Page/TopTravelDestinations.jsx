@@ -65,7 +65,7 @@ const TopTravelDestinations = () => {
 
 
                     <div className='row-span-1 col-span-3'>
-                        <div data-aos="fade-up" data-aos-duration="500" className="relative h-full w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="relative h-full w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
                             {/* Avatar Section */}
                             <img
                                 className="object-cover object-center w-full h-full"
@@ -83,7 +83,7 @@ const TopTravelDestinations = () => {
                     </div>
 
                     <div className='col-span-3'>
-                        <div data-aos="fade-up" data-aos-duration="500" className="relative w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="relative w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
                             {/* Avatar Section */}
                             <img
                                 className="object-cover object-center w-full"

@@ -79,10 +79,10 @@ function Slider() {
     };
 
     return (
-        <div className=' my-3 h-64 lg:h-[500px] flex items-center justify-end relative'>
+        <div className='my-3 h-64 lg:h-[500px] flex items-center justify-end relative '>
             <div className='flex overflow-hidden'>
                 {ImageArray.map((item, index) => (
-                    <div key={index} className={(index === 0) ? `${FadeInAnimation} absolute top-0 left-0 w-[85%] h-full z-0 rounded-xl  transition-all duration-700` : `${forwardSlideAnimation} ${BackwardSlideAnimation} h-[200px] w-[140px] my-8 mx-2 z-10 rounded-xl item-shadow transition-all duration-700S`}>
+                    <div key={index} className={(index === 0) ? `${FadeInAnimation}  absolute top-0 left-0 w-[85%] h-full z-0 rounded-xl  transition-all duration-700` : `${forwardSlideAnimation} ${BackwardSlideAnimation} h-[200px] w-[140px] my-8 mx-2 z-10 rounded-xl item-shadow transition-all duration-700S`}>
                         <img className='h-full w-full ml-4 bg-cover object-center rounded-2xl' src={item.ImgSrc} />
                         <div className={`${MoveUpAnimation} hidden  h-full w-[350px] absolute top-0 left-0 lg:flex items-center z-20 text-white px-10 transition-all duration-700`}>
                             {(index === 0) ? (

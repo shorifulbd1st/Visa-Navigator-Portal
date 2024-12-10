@@ -126,7 +126,7 @@ const MySingleVisa = ({ Visa, myAddedVisa, setMyAddedVisa }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://visa-navigator-portal-server-side.vercel.app/addVisa/${id}`, {
+                fetch(`https://visa-navigator-portal-server-side.vercel.app/addVisa/${_id}`, {
                     method: "DELETE",
                 })
                     .then(res => res.json())
@@ -139,6 +139,7 @@ const MySingleVisa = ({ Visa, myAddedVisa, setMyAddedVisa }) => {
                                 icon: "success"
                             });
                             const remainVisa = myAddedVisa.filter(visa => visa._id !== id)
+                            // console.log(remainVisa)
                             setMyAddedVisa(remainVisa);
                         }
                     })

@@ -18,15 +18,17 @@ const Login = () => {
     const { handleGoogleLogin, user, setUser, handleLogin, notify, setNewEmail } = useContext(AuthContext);
 
 
-
-    const from = location.state?.from?.pathname || '/';
+    // console.log(location.state)
+    // const from = location.state?.from?.pathname || '/';
 
 
     const googleLogin = () => {
         handleGoogleLogin()
             .then((result) => {
                 notify('success', `Welcome ${result.user.displayName}`);
-                navigate(from, { replace: true });
+                // navigate(from, { replace: true });
+                // const redirectPath = location.state?.from || '/';
+                navigate('/')
             })
             .catch((error) => {
                 notify('error', `Error: ${error.message}`);
@@ -43,7 +45,10 @@ const Login = () => {
             .then(result => {
                 notify('success', `Welcome ${result.user.displayName}`);
 
-                navigate(from, { replace: true });
+                // navigate(from, { replace: true });
+                // const redirectPath = location.state?.from || '/';
+                navigate('/')
+
             })
             .catch(error => {
                 notify('error', 'email or password invalid');

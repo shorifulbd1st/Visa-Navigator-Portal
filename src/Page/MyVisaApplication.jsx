@@ -8,6 +8,7 @@ const MyVisaApplication = () => {
     const data = useLoaderData();
     const [myApplyVisa, setMyApplyVisa] = useState(data);
     const [inputValue, setInputValue] = useState('');
+
     useEffect(() => {
         const searchResult = [...myApplyVisa].filter(visa => visa.visa.countryName.toLowerCase().includes(inputValue.toLowerCase()))
         if (searchResult.length) {
