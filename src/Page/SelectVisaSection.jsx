@@ -4,11 +4,9 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 function SelectVisaSection({ allVisa, setAllVisa }) {
     const [selectedVisa, setSelectedVisa] = useState("");
-
-
-
     useEffect(() => {
-        if (selectedVisa === "All visa") {
+        // console.log('selectedVisa', selectedVisa)
+        if (selectedVisa === "All visa" || selectedVisa === "") {
 
             fetch("https://visa-navigator-portal-server-side.vercel.app/allVisa")
                 .then(res => res.json())

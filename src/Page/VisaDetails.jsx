@@ -119,17 +119,17 @@ const VisaDetails = () => {
 
 
             {/* open modal */}
-            <div className="relative flex justify-center my-10">
+            <div className="relative flex justify-center my-10 ">
 
                 {isModalOpen && (
                     <div
-                        className="fixed inset-0 z-40 my-10 overflow-y-auto "
+                        className="fixed inset-0 z-50 my-10 overflow-y-auto "
                         aria-labelledby="modal-title"
                         role="dialog"
                         aria-modal="true"
                     >
                         <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-                            <div className="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:w-full sm:max-w-sm sm:p-6 sm:align-middle">
+                            <div className="border border-success  relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:w-full sm:max-w-sm sm:p-6 sm:align-middle">
                                 <h3
                                     className="text-lg font-medium leading-6 text-gray-800 capitalize dark:text-white"
                                     id="modal-title"

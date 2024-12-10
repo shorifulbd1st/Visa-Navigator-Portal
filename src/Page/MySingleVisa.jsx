@@ -112,14 +112,7 @@ const MySingleVisa = ({ Visa, myAddedVisa, setMyAddedVisa }) => {
         closeModal();
     };
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     const form = e.target;
 
-
-    //     // Proceed with the form submission or API call
-    //     closeModal();
-    // };
 
 
     const handleDelete = id => {
