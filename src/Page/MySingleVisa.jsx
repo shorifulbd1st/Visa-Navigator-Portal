@@ -12,7 +12,7 @@ const MySingleVisa = ({ Visa, myAddedVisa, setMyAddedVisa }) => {
     const [visa, setVisa] = useState(Visa)
     const { _id, email, countryImage, countryName, visaType, processingTime, requiredDocuments, description, ageRestriction, fee, validity, applicationMethod } = visa;
 
-
+    // console.log(visa)
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const loggedInEmail = user?.email;
@@ -81,7 +81,7 @@ const MySingleVisa = ({ Visa, myAddedVisa, setMyAddedVisa }) => {
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
-                setVisa(visa)
+                setVisa({ ...visa, _id })
                 if (data.modifiedCount > 0) {
                     let timerInterval;
                     Swal.fire({
