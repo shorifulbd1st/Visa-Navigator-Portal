@@ -52,9 +52,6 @@ const router = createBrowserRouter([
                 element: <PrivateRouter><MyVisaApplication></MyVisaApplication></PrivateRouter>,
                 loader: ({ params }) => fetch(`https://visa-navigator-portal-server-side.vercel.app/applyVisa/${params.email}`)
             },
-
-
-
         ]
     },
     {

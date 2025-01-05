@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { AuthContext } from '../Provider/AuthProvider'
+// import { AuthContext } from '../Provider/AuthProvider'
 
 const Register = () => {
 
@@ -56,7 +56,7 @@ const Register = () => {
         <div className=" min-h-[80vh] w-10/12 md:w-6/12 lg:w-5/12 xl:w-4/12 my-8 mx-auto ">
             <div className="card bg-base-100 border-2 border-success w-full shrink-0 shadow-2xl pb-4">
                 <h2 className='text-2xl font-semibold text-center py-2'>Register your account</h2>
-                <form onSubmit={handleSubmit} className="card-body py-2">
+                <form className="card-body py-2">
 
                     <div className="form-control">
                         <label className="label">

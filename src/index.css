@@ -29,6 +29,7 @@
 
 html {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .navbar-wrapper{
     background-color: rgb(71, 85, 105);

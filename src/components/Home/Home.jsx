@@ -6,14 +6,15 @@ import OurService from '../../Page/OurService'
 import TopTravelDestinations from '../../Page/TopTravelDestinations'
 import Footer from '../Footer'
 import NewSlider from '../NewSlider'
-import Slider from '../Slider'
+import NewBanner from '../NewBanner'
 
 const Home = () => {
     const data = useLoaderData();
 
     return (
         <div>
-            <Banner></Banner>
+            {/* <Banner></Banner> */}
+            <NewBanner></NewBanner>
             <div className='w-11/12 mx-auto'>
 
 
