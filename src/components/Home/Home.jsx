@@ -7,6 +7,7 @@ import TopTravelDestinations from '../../Page/TopTravelDestinations'
 import Footer from '../Footer'
 import NewSlider from '../NewSlider'
 import NewBanner from '../NewBanner'
+import TourGuide from '../TourGuide'
 
 const Home = () => {
     const data = useLoaderData();
@@ -15,7 +16,7 @@ const Home = () => {
         <div>
             {/* <Banner></Banner> */}
             <NewBanner></NewBanner>
-            <div className='w-11/12 mx-auto'>
+            <div>
 
 
                 {/* <Slider></Slider> */}
@@ -30,6 +31,7 @@ const Home = () => {
             </div>
             <OurService></OurService>
             <TopTravelDestinations></TopTravelDestinations>
+            <TourGuide></TourGuide>
             {/* <Footer></Footer> */}
         </div>
     )
