@@ -8,6 +8,8 @@ import Footer from '../Footer'
 import NewSlider from '../NewSlider'
 import NewBanner from '../NewBanner'
 import TourGuide from '../TourGuide'
+import SuccessSection from '../SuccessSection'
+import StatsSection from '../StatsSection'
 
 const Home = () => {
     const data = useLoaderData();
@@ -29,6 +31,8 @@ const Home = () => {
                 }
 
             </div>
+            {/* <SuccessSection></SuccessSection> */}
+            {/* <StatsSection></StatsSection> */}
             <OurService></OurService>
             <TopTravelDestinations></TopTravelDestinations>
             <TourGuide></TourGuide>

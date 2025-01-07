@@ -11,7 +11,7 @@ const OurService = () => {
             <div className="hero my-8">
 
                 <div className="hero-content flex flex-col lg:grid lg:grid-cols-2 gap-2  ">
-                    <div data-aos="fade-up" data-aos-duration="500" className='rounded-lg'>
+                    <div data-aos="fade-up" data-aos-duration="300" className='rounded-lg'>
 
 
                         <div className="carousel-container lg:col-span-1 rounded-lg overflow-hidden">
@@ -30,7 +30,7 @@ const OurService = () => {
                                     <img className="w-full h-full object-cover" src="https://www.bestdesertsafariindubai.com/blog/wp-content/uploads/2022/06/Apply-for-Online-Dubai-Visa.jpg" alt="Slide 2" />
                                 </div>
                                 <div>
-                                    <img className="w-full h-full object-cover" src="https://media.istockphoto.com/id/959983718/photo/waiting-for-the-flight.jpg?s=1024x1024&w=is&k=20&c=0Eg6zLtyQ5_7B7tQkVqQJycMA6fEGh8BLlaS-0ozKqw=" alt="Slide 3" />
+                                    <img className="w-full h-full object-cover" src="https://images.pexels.com/photos/7742551/pexels-photo-7742551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Slide 3" />
                                 </div>
                                 <div>
                                     <img className="w-full h-full object-cover" src="https://images.pexels.com/photos/1201995/pexels-photo-1201995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Slide 4" />
