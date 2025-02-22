@@ -57,16 +57,16 @@ Welcome to **Visa Navigator**, Visa Navigator is a user-friendly platform design
 
 ## ✨ Key Features of Visa Navigator
 - **📝 Personalized Visa Guidance:** Users receive tailored visa recommendations based on their purpose (work, study, travel, or relocation). Provides a checklist of required documents specific to their visa type.
-- **🌍 Country-Specific Visa Requirements** Detailed visa policies and application procedures for different countries.
-Real-time updates on immigration rules, embassy guidelines, and deadlines.
-**🔄 Step-by-Step Application Assistance:** A guided process for users to navigate through visa applications smoothly.
+- **🌍 Country-Specific Visa Requirements** Detailed visa policies and application procedures for different countries. Real-time updates on immigration rules, embassy guidelines, and deadlines.
+- **🔄 Step-by-Step Application Assistance:** A guided process for users to navigate through visa applications smoothly.
 Interactive progress tracking to monitor each stage of the application.
 - **📢 Real-Time Updates & Notifications** Alerts for deadline reminders, application status updates, and policy changes.
 Email and in-app notifications to keep users informed.
 - **🔍 Smart Document Management** Secure upload and storage of essential visa documents.
-Auto-validation to ensure all required documents are submitted correctly.
+Auto-validation to ensure all required documents are submitted correctly.ad
 - **🖥 User-Friendly Interface:** A clean, intuitive design optimized for both desktop and mobile devices.
 Multilingual support for users worldwide.
+- **User:** Users can add visas for any country. After adding, they can update and delete as needed through a confirmation toast.
 ---
 
 ## 🧰 NPM Packages Used
