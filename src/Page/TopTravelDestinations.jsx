@@ -2,7 +2,7 @@ import React from 'react'
 
 const TopTravelDestinations = () => {
     return (
-        <div className='w-11/12 mx-auto my-10'>
+        <div className='w-11/12 mx-auto my-4 -mt-4'>
             {/* <h1 className='text-3xl font-semibold '>Top Travel Destinations</h1> */}
             <h1 data-aos="zoom-in" data-aos-duration="1000" className="text-3xl lg:text-4xl my-5 font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg">
                 Top Travel Destinations

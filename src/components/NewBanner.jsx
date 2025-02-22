@@ -31,7 +31,7 @@ export default function Carousel() {
 
     ]);
     return (
-        <div className='w-11/12  py-0 mx-auto'>
+        <div className=' py-0 mx-auto mt-0'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}

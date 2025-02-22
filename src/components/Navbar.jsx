@@ -12,6 +12,10 @@ const themes = [
 
 ]
 const Navbar = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+    const { user, handleLogout } = useContext(AuthContext)
+
     const [theme, setTheme] = useState(
         localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
     )
@@ -22,8 +26,6 @@ const Navbar = () => {
         document.querySelector('html').setAttribute('data-theme', localTheme)
     }, [theme])
 
-    const [isOpen, setIsOpen] = useState(false);
-    const { user, handleLogout } = useContext(AuthContext)
 
     return (
         <div className='sticky top-0 z-40 '>

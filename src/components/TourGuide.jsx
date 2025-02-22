@@ -3,11 +3,13 @@ import SocialButtons from './SocialButtons'
 
 const TourGuide = () => {
     return (
-        <div className='w-11/12 mx-auto -mt-5 '>
+        <div data-aos="fade-up"
+            data-aos-duration="2000" className='w-11/12 mx-auto mt-8'>
             <div className='bg-gradient-to-r from-blue-200 via-green to-blue-200 py-5 px-8 rounded-t-xl'>
                 <h1 className='text-3xl text-center font-bold text-blue-400 my-5'>Our Travel Guide</h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
-                    <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                    <div data-aos="fade-up"
+                        data-aos-duration="2000" className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
                         <div
                             className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
                             style={{
@@ -41,7 +43,8 @@ const TourGuide = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                    <div data-aos="fade-up"
+                        data-aos-duration="2000" className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
                         <div
                             className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
                             style={{
@@ -75,7 +78,8 @@ const TourGuide = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                    <div data-aos="fade-up"
+                        data-aos-duration="2000" className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
                         <div
                             className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
                             style={{

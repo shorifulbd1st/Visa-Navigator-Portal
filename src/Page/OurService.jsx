@@ -4,8 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the ca
 import { GiCommercialAirplane } from "react-icons/gi";
 const OurService = () => {
     return (
-        <div className='my-9'>
-            {/* <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quia, cupiditate aut quibusdam corporis deserunt eaque libero. Quibusdam, repudiandae ullam sit ipsum repellendus tempore temporibus accusantium eligendi culpa natus rerum!</div> */}
+        <div className='my-4'>
+
             <h1 data-aos="fade-right" data-aos-duration="500" className="text-2xl lg:text-4xl my-5 font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 drop-shadow-lg"> Our Excellence customer Service</h1>
 
             <div className="hero my-8">

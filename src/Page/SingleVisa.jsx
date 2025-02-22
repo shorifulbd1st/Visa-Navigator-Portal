@@ -6,7 +6,8 @@ const SingleVisa = ({ visa }) => {
     const { _id, email, countryImage, countryName, visaType, processingTime, requiredDocuments, description, ageRestriction, fee, validity, applicationMethod } = visa;
 
     return (
-        <div>
+        <div data-aos="fade-up"
+            data-aos-duration="2000">
 
             <div className="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
 
