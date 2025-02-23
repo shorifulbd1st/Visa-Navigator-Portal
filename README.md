@@ -9,7 +9,7 @@
 
 ## 📜 Project Overview
 
-Welcome to **Visa Navigator**, Visa Navigator is a user-friendly platform designed to simplify the visa application process. It provides detailed information on visa requirements, necessary documents, and step-by-step instructions tailored to each user’s needs. The website keeps users updated on the latest immigration policies, deadlines, and embassy guidelines, ensuring accuracy and reliability. Whether for work, study, travel, or relocation, Visa Navigator offers tools to guide users through every stage of their application. By making the process clear and easy to follow, it eliminates confusion and stress, helping users save time and achieve their travel goals efficiently. Plan your journey confidently with Visa Navigator!
+Welcome to **Visa Navigator**, Visa Navigator is a comprehensive, user-friendly platform designed to simplify the visa application process for individuals worldwide. Whether users are planning to work, study, travel, or relocate, Visa Navigator provides personalized guidance, country-specific visa requirements, step-by-step application assistance, and real-time updates to ensure a seamless experience.
 
 ---
 
